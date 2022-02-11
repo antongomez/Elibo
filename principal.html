@@ -8,28 +8,38 @@
     <nav>
       <ul>
         <li><img src="Imaxes\Logos\LogoELIBO.png" width="100"></li>
-        <li><a href="#">Actividade</a></li>
-        <li><a href="#">Deportistas</a></li>
-        <li><a href="#">Novidades</a></li>
-        <li><a href="#">Sobre Nós</a></li>
-        <li><img src="Imaxes\FotoPerfil.jpg" width="80"></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="deportistas.html">Deportistas</a></li>
+        <li><a href="novidades.html">Novidades</a></li>
+        <li><a href="sobre_nos.html">Sobre Nós</a></li>
+        <li><img src="Imaxes\FotoPerfil.jpg" width="80">
+          <form name="formulario" method="post" action="">
+            <select name="opciones" onchange="location.href=formulario.opciones.value;">
+              <option value="none" selected hidden></option>
+              <option value="perfil.html">Perfil</option>
+              <option value="equipamento.html">Equipamento</option>
+              <option value="index.html">Pechar sesión</option>
+            </select>
+          </form>
+
+        </li>
         <li><img src="Imaxes\Logos\LogoMais.svg" width="60"></li>
       </ul>
     </nav>
 
     <section id="seccionEsquerda">
+      <img src="Imaxes\FotoPerfil.jpg" width="80">
+      <a href="#">Anton Gomez Lopez</a>
       <ul>
-        <li><img src="Imaxes\FotoPerfil.jpg" width="80"></li>
-        <li><a href="#">Anton Gomez Lopez</a></li>
-        <li>Actividades</li>
+        <li>Actividades <strong>100</strong></li>
         <!-- Anidar listas para os numeros -->
-        <li>Seguidores</li>
-        <li>Seguidos</li>
+        <li>Seguidores <strong>10</strong></li>
+        <li>Seguidos <strong>10</strong></li>
       </ul>
 
       <ul>
         <li>Última actividade</li>
-        <li>Rodaxe á mañá, Onte</li>
+        <li><strong>Rodaxe á mañá</strong> • Onte</li>
       </ul>
     </section>
 
@@ -65,36 +75,15 @@
         <img src="Imaxes\Logos\logo_natacion.svg" width="25">
         </caption>
 
-        <tr>
-          <th>Este mes</th>
-        </tr>
-        <tr>
-          <td>Distancia</td>
-          <td>43,1 km</td>
-        </tr>
-        <tr>
-          <td>Tempo</td>
-          <td>3h 23min</td>
-        </tr>
-        <tr>
-          <td>Carreiras</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <th>Este ano</th>
-        </tr>
-        <tr>
-          <td>Distancia</td>
-          <td>245 km</td>
-        </tr>
-        <tr>
-          <td>Tempo</td>
-          <td>17h 30min</td>
-        </tr>
-        <tr>
-          <td>Carreiras</td>
-          <td>50</td>
-        </tr>
+        <tr><th>Este mes</th></tr>
+        <tr><td>Distancia</td><td>43,1 km</td></tr>
+        <tr><td>Tempo</td><td>3h 23min</td></tr>
+        <tr><td>Carreiras</td><td>8</td></tr>
+        <tr><th>Este ano</th></tr>
+        <tr><td>Distancia</td><td>245 km</td></tr>
+        <tr><td>Tempo</td><td>17h 30min</td></tr>
+        <tr><td>Carreiras</td><td>50</td></tr>
+
       </table>
     </section>
 
