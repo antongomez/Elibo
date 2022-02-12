@@ -1,31 +1,46 @@
 <!DOCTYPE>
+<html lang="es">
 <html>
   <head>
+    <meta charset="UTF-8" />
     <title>Páxina principal</title>
+    <!--<link rel="stylesheet" href="barraNavegacion.css" />-->
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><img src="Imaxes\Logos\LogoELIBO.png" width="100"></li>
-        <li><a href="actividades.html">Actividades</a></li>
-        <li><a href="deportistas.html">Deportistas</a></li>
-        <li><a href="novidades.html">Novidades</a></li>
-        <li><a href="sobre_nos.html">Sobre Nós</a></li>
-        <li><img src="Imaxes\FotoPerfil.jpg" width="80">
-          <form name="formulario" method="post" action="">
-            <select name="opciones" onchange="location.href=formulario.opciones.value;">
-              <option value="none" selected hidden></option>
-              <option value="perfil.html">Perfil</option>
-              <option value="equipamento.html">Equipamento</option>
-              <option value="index.html">Pechar sesión</option>
-            </select>
-          </form>
+    <header class="header">
+      <nav class="nav">
+        <img src="Imaxes\Logos\LogoELIBO.png" height="80">
+        <ul class="nav-menu">
+          <li class="nav-menu-item nav-link">
+            <a href="actividades.html" class="nav-menu-link nav-link">Actividades</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="deportistas.html" class="nav-menu-link nav-link">Deportistas</a>
+          </li>
+          <li class="nav-menu-item nav-link">
+            <a href="novidades.html" class="nav-menu-link nav-link">Novidades</a>
+          </li>
+          <li class="nav-menu-item nav-link">
+            <a href="sobre_nos.html" class="nav-menu-link nav-link">Sobre Nós</a>
+          </li>
+        </ul>
+        <ul class="nav-menu">
+          <li><img src="Imaxes\FotoPerfil.jpg" width="80">
+            <form name="formulario" method="post" action="">
+              <select name="opciones" onchange="location.href=formulario.opciones.value;">
+                <option value="none" selected hidden></option>
+                <option value="perfil.html">Perfil</option>
+                <option value="equipamento.html">Equipamento</option>
+                <option value="index.html">Pechar sesión</option>
+              </select>
+            </form>
 
-        </li>
-        <li><img src="Imaxes\Logos\LogoMais.svg" width="60"></li>
-      </ul>
-    </nav>
+          </li>
+          <li><img src="Imaxes\Logos\LogoMais.svg" width="60"></li>
+        </ul>
+      </nav>
+    </header>
 
     <section id="seccionEsquerda">
       <img src="Imaxes\FotoPerfil.jpg" width="80">
