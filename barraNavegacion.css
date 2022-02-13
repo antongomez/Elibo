@@ -1,44 +1,67 @@
 * {
-  margin: 0;
-  box-sizing: border-box;
+  margin: 0;              /*Quita as marxes predeterminadas polo navegador*/
+  box-sizing: border-box; /*Facilitar o dimensianamento dos elementos. Por defecto esta en content-box*/
 }
 
 body {
-  font-family: sans-serif;
-  padding: 90px 20px 0;
+  background-color: C0C0C0;
+  font-family: Rubik;   /*Non a esta collendo*/
+  padding: 90px 20px 0; /*Arriba | Esquerda e Dereita | Abaixo*/
 }
 
 .header {
   background-color: white;
-  height: 80px;
-  width: 100%;
-  position: fixed;
-  top: 0;
+  height: 60px;     /*Alto da barra de navegacion*/
+  width: 100%;      /*Ancho ao maximo da barra de navegacion*/
+  position: fixed;  /*A barra de navegacion quedara sempre arriba fixada cando facemos scroll*/
+  top: 0;           /*Alineacion da barra de navegacion fixa arriba a esquerda*/
   left: 0;
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
+  display: flex;                  /*Para distribuir os elementos do nav*/
+  justify-content: space-between; /*Para espaciar os elementos*/
 
   max-width: 992px;
   margin: 0 auto;
 }
 
+/*Clase dos enlaces do menu*/
 .nav-link {
   color: black;
   text-decoration: none;
 }
 
+/*Listas dentro do nav*/
 .nav-menu {
   display: flex;
-  margin-right: 40px;
-  list-style: none;
+  list-style: none;   /*Quita os puntos da lista*/
+}
+
+.logo{
+  margin-left: 40px; /*Marxe a dereita*/
+}
+
+.nav-menu-2{
+  margin-right: 40px; /*Marxe a dereita*/
 }
 
 .nav-menu-item {
-  font-size: 11px;
-  margin: 0 6px;
-  line-height: 80px;
-  width: max-content;
+  font-style: normal;
+  font-size: 15px;    /*Axustar ao tipo e tamanho de letra*/
+  margin: 0 6px;      /*Arriba e abaixo | Esquerda e Dereita*/
+  line-height: 60px;  /*Usamolo para centrar os items do menu*/
+  width: max-content; /*Para evitar que ao redimensionar a pantalla corte a palabra "Sobre nos"*/
+}
+
+.nav-menu-link{
+  padding: 0 5 19 5;
+
+}
+
+.nav-menu-link:hover{
+  /*transition: .3s; Aplica un retardo*/
+  border-width: 0 0 3 0;  /*Para "subliñar" cando pasamos por riba*/
+  border-style: solid;
+  border-color: #FF8A00;
 }
