@@ -21,9 +21,6 @@ body {
 .nav {
   display: flex;                  /*Para distribuir os elementos do nav*/
   justify-content: space-between; /*Para espaciar os elementos*/
-
-  max-width: 992px;
-  margin: 0 auto;
 }
 
 /*Clase dos enlaces do menu*/
@@ -40,6 +37,7 @@ body {
 
 .logo{
   margin-left: 40px; /*Marxe a dereita*/
+   /*Axustar as marxes con respecto a distribucion en 12 columnas*/
 }
 
 .nav-menu-2{
@@ -64,4 +62,16 @@ body {
   border-width: 0 0 3 0;  /*Para "subliñar" cando pasamos por riba*/
   border-style: solid;
   border-color: #FF8A00;
+}
+
+.fotoPerfil{
+  height: 50px;
+  width: auto;
+  border-radius:300px;
+}
+
+.fotoMais{
+  line-height: 60px;
+  height: 50px;
+  width: auto;
 }

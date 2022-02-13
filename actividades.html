@@ -10,23 +10,30 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <img class="logo" src="Imaxes\Logos\LogoELIBO.png" height="60">
         <ul class="nav-menu">
-          <li class="nav-menu-item nav-link">
-            <a href="actividades.html" class="nav-menu-link nav-link">Actividades</a>
+          <li>
+            <img class="logo" src="Imaxes\Logos\LogoELIBO.png" height="60">
           </li>
-          <li class="nav-menu-item">
-            <a href="deportistas.html" class="nav-menu-link nav-link">Deportistas</a>
-          </li>
-          <li class="nav-menu-item nav-link">
-            <a href="novidades.html" class="nav-menu-link nav-link">Novidades</a>
-          </li>
-          <li class="nav-menu-item nav-link">
-            <a href="sobre_nos.html" class="nav-menu-link nav-link">Sobre Nós</a>
+          <li>
+            <ul class="nav-menu">
+              <li class="nav-menu-item nav-link">
+                <a href="actividades.html" class="nav-menu-link nav-link">Actividades</a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="deportistas.html" class="nav-menu-link nav-link">Deportistas</a>
+              </li>
+              <li class="nav-menu-item nav-link">
+                <a href="novidades.html" class="nav-menu-link nav-link">Novidades</a>
+              </li>
+              <li class="nav-menu-item nav-link">
+                <a href="sobre_nos.html" class="nav-menu-link nav-link">Sobre Nós</a>
+              </li>
+            </ul>
           </li>
         </ul>
         <ul class="nav-menu nav-menu-2">
-          <li><img src="Imaxes\FotoPerfil.jpg" width="80">
+          <li>
+            <img class="fotoPerfil" src="Imaxes\FotoPerfil.jpg" width="80">
             <form name="formulario" method="post" action="">
               <select name="opciones" onchange="location.href=formulario.opciones.value;">
                 <option value="none" selected hidden></option>
@@ -35,9 +42,10 @@
                 <option value="index.html">Pechar sesión</option>
               </select>
             </form>
-
           </li>
-          <li><img src="Imaxes\Logos\LogoMais.svg" width="60"></li>
+          <li>
+            <img class="fotoMais" src="Imaxes\Logos\LogoMais.svg">
+          </li>
         </ul>
       </nav>
     </header>
