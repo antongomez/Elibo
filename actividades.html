@@ -10,38 +10,38 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <ul class="nav-menu">
+        <ul class="lista lista-flex" id="nav-lista-esquerda">
           <li>
             <img class="logo" src="Imaxes\Logos\LogoELIBO.png" height="60">
           </li>
           <li>
-            <ul class="nav-menu">
-              <li class="nav-menu-item nav-link">
-                <a href="actividades.html" class="nav-menu-link nav-link">Actividades</a>
+            <ul class="lista lista-flex">
+              <li class="nav-item nav-item-menu">
+                <a href="actividades.html" class="nav-enlace nav-item-menu-link">Actividades</a>
               </li>
-              <li class="nav-menu-item">
-                <a href="deportistas.html" class="nav-menu-link nav-link">Deportistas</a>
+              <li class="nav-item nav-item-menu">
+                <a href="deportistas.html" class="nav-enlace nav-item-menu-link">Deportistas</a>
               </li>
-              <li class="nav-menu-item nav-link">
-                <a href="novidades.html" class="nav-menu-link nav-link">Novidades</a>
+              <li class="nav-item nav-item-menu">
+                <a href="novidades.html" class="nav-enlace nav-item-menu-link">Novidades</a>
               </li>
-              <li class="nav-menu-item nav-link">
-                <a href="sobre_nos.html" class="nav-menu-link nav-link">Sobre Nós</a>
+              <li class="nav-item nav-item-menu">
+                <a href="sobre_nos.html" class="nav-enlace nav-item-menu-link">Sobre Nós</a>
               </li>
             </ul>
           </li>
         </ul>
-        <ul class="nav-menu nav-menu-2">
-          <li>
+
+        <ul class="lista lista-flex" id="nav-lista-dereita">
+          <li id="desplegable">
             <img class="fotoPerfil" src="Imaxes\FotoPerfil.jpg" width="80">
-            <form name="formulario" method="post" action="">
-              <select name="opciones" onchange="location.href=formulario.opciones.value;">
-                <option value="none" selected hidden></option>
-                <option value="perfil.html">Perfil</option>
-                <option value="equipamento.html">Equipamento</option>
-                <option value="index.html">Pechar sesión</option>
-              </select>
-            </form>
+            <ul class="lista" id="menu-desplegable">
+              <!-- principio menu desplegable -->
+             <li class="desplegable-item"><a class="nav-enlace" href="perfil.html">Perfil</a></li>
+             <li class="desplegable-item"><a class="nav-enlace"href="equioamento.html">Equipamento</a></li>
+             <li class="desplegable-item"><a class="nav-enlace"href="index.html">Pechar sesión</a></li>
+            </ul>
+            <!-- final menu desplegable -->
           </li>
           <li>
             <img class="fotoMais" src="Imaxes\Logos\LogoMais.svg">

@@ -9,6 +9,9 @@ body {
   padding: 90px 20px 0; /*Arriba | Esquerda e Dereita | Abaixo*/
 }
 
+
+/*    Encabezado. Xeral   */
+
 .header {
   background-color: white;
   height: 60px;     /*Alto da barra de navegacion*/
@@ -23,46 +26,63 @@ body {
   justify-content: space-between; /*Para espaciar os elementos*/
 }
 
-/*Clase dos enlaces do menu*/
-.nav-link {
-  color: black;
-  text-decoration: none;
-}
-
-/*Listas dentro do nav*/
-.nav-menu {
-  display: flex;
-  list-style: none;   /*Quita os puntos da lista*/
-}
-
-.logo{
+#nav-lista-esquerda{
   margin-left: 40px; /*Marxe a dereita*/
    /*Axustar as marxes con respecto a distribucion en 12 columnas*/
 }
 
-.nav-menu-2{
+#nav-lista-dereita{
   margin-right: 40px; /*Marxe a dereita*/
 }
 
-.nav-menu-item {
+
+/*    Listas. Xeral   */
+
+.lista{
+    list-style: none;   /*Quita os puntos da lista*/
+}
+
+/*  Listas con disposicion horizontal  */
+.lista-flex {
+  display: flex;
+}
+
+
+/*    Elementos das listas e enlaces. Xeral   */
+
+.nav-item {
   font-style: normal;
   font-size: 15px;    /*Axustar ao tipo e tamanho de letra*/
+}
+
+/* Clase dos enlaces do menu */
+.nav-enlace {
+  color: black;
+  text-decoration: none;
+}
+
+
+/*    Enlaces da parte esquerda   */
+
+.nav-item-menu {
   margin: 0 6px;      /*Arriba e abaixo | Esquerda e Dereita*/
   line-height: 60px;  /*Usamolo para centrar os items do menu*/
   width: max-content; /*Para evitar que ao redimensionar a pantalla corte a palabra "Sobre nos"*/
 }
 
-.nav-menu-link{
+/* Para conseguir o subliñado cando se pasa por riba */
+.nav-item-menu-link {
   padding: 0 5 19 5;
-
 }
 
-.nav-menu-link:hover{
+.nav-item-menu-link:hover {
   /*transition: .3s; Aplica un retardo*/
   border-width: 0 0 3 0;  /*Para "subliñar" cando pasamos por riba*/
   border-style: solid;
   border-color: #FF8A00;
 }
+
+/*    Elementos da parte dereita e desplegable    */
 
 .fotoPerfil{
   height: 50px;
@@ -75,3 +95,40 @@ body {
   height: 50px;
   width: auto;
 }
+
+/*  Menu desplegable  */
+#desplegable {
+  width: 120px;
+}
+
+#desplegable:hover > ul {
+  display:block;
+}
+
+#menu-desplegable {
+  display: none;
+  background: white;
+  list-style: none;
+  float: none;
+  width: 120px;
+  padding: 0;/*Cambiar*/
+}
+
+.desplegable-item {
+  font-style: normal;
+  padding: 3 5 2;
+  width: 100%;        /*Para que funcione ben o hover*/
+  font-size: 15px;    /*Axustar ao tipo e tamanho de letra*/
+  margin: 0;
+  line-height: 30px;  /*Usamolo para centrar os items do menu*/
+}
+
+.desplegable-item:hover {
+  background: #C0C0C0;
+}
+
+/*Cousas:
+  - Aprender como espaciar listas (espaciar o menu desplegable e a foto de Perfil
+      , o mais e a foto de perfil, e os elementos da lista de elibo e os enlaces, axustalos cos mockups)
+  - Poñerlle o simbolito con un boton ou algo ao lado da foto de Perfil
+  - Saber como descargar fontes e estandarizar a letra, o tamaño e os estilos*/
