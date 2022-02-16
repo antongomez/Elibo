@@ -1,31 +1,53 @@
 <!DOCTYPE>
 <html>
-  <head>
-    <title>Novidades</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>Novidades</title>
+  <!--<link rel="stylesheet" href="css\barraNavegacion.css" />-->
+</head>
 
-  <body>
-    <nav>
-      <ul>
-        <li><img src="Imaxes\Logos\LogoELIBO.png" width="100"></li>
-        <li><a href="actividades.html">Actividades</a></li>
-        <li><a href="deportistas.html">Deportistas</a></li>
-        <li><a href="novidades.html">Novidades</a></li>
-        <li><a href="sobre_nos.html">Sobre Nós</a></li>
-        <li><img src="Imaxes\FotoPerfil.jpg" width="80">
-          <form name="formulario" method="post" action="">
-            <select name="opciones" onchange="location.href=formulario.opciones.value;">
-              <option value="none" selected hidden></option>
-              <option value="perfil.html">Perfil</option>
-              <option value="equipamento.html">Equipamento</option>
-              <option value="index.html">Pechar sesión</option>
-            </select>
-          </form>
-
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="lista lista-flex" id="nav-lista-esquerda">
+        <li>
+          <img class="logo" src="Imaxes\Logos\LogoELIBO.png" height="60">
         </li>
-        <li><img src="Imaxes\Logos\LogoMais.svg" width="60"></li>
+        <li>
+          <ul class="lista lista-flex">
+            <li class="nav-item nav-item-menu">
+              <a href="actividades.html" class="nav-enlace nav-item-menu-link">Actividades</a>
+            </li>
+            <li class="nav-item nav-item-menu">
+              <a href="deportistas.html" class="nav-enlace nav-item-menu-link">Deportistas</a>
+            </li>
+            <li class="nav-item nav-item-menu">
+              <a href="novidades.html" class="nav-enlace nav-item-menu-link">Novidades</a>
+            </li>
+            <li class="nav-item nav-item-menu">
+              <a href="sobre_nos.html" class="nav-enlace nav-item-menu-link">Sobre Nós</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="lista lista-flex" id="nav-lista-dereita">
+        <li id="desplegable">
+          <img class="fotoPerfil" src="Imaxes\FotoPerfil.jpg" width="80">
+          <ul class="lista" id="menu-desplegable">
+            <!-- principio menu desplegable -->
+           <li class="desplegable-item"><a class="nav-enlace" href="perfil.html">Perfil</a></li>
+           <li class="desplegable-item"><a class="nav-enlace"href="equioamento.html">Equipamento</a></li>
+           <li class="desplegable-item"><a class="nav-enlace"href="index.html">Pechar sesión</a></li>
+          </ul>
+          <!-- final menu desplegable -->
+        </li>
+        <li>
+          <img class="fotoMais" src="Imaxes\Logos\LogoMais.svg">
+        </li>
       </ul>
     </nav>
+  </header>
 
     <section id="encabezado">
       <h1>Novidades</h1>
