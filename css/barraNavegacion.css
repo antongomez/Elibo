@@ -27,12 +27,12 @@ body {
 }
 
 #nav-lista-esquerda{
-  margin-left: 40px; /*Marxe a dereita*/
+  margin-left: 162px; /*Marxe a dereita*/
    /*Axustar as marxes con respecto a distribucion en 12 columnas*/
 }
 
 #nav-lista-dereita{
-  margin-right: 40px; /*Marxe a dereita*/
+  margin-right: 162px; /*Marxe a dereita*/
 }
 
 
@@ -90,10 +90,10 @@ body {
   border-radius:300px;
 }
 
-.fotoMais{
+#fotoMais{
   line-height: 60px;
   height: 50px;
-  width: auto;
+  background: red;
 }
 
 /*  Menu desplegable  */
@@ -132,3 +132,11 @@ body {
       , o mais e a foto de perfil, e os elementos da lista de elibo e os enlaces, axustalos cos mockups)
   - Poñerlle o simbolito con un boton ou algo ao lado da foto de Perfil
   - Saber como descargar fontes e estandarizar a letra, o tamaño e os estilos*/
+
+#div_mais{
+  width: 142px;
+  background: blue;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
