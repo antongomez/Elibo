@@ -12,7 +12,9 @@
       <nav class="nav">
         <ul class="lista lista-flex" id="nav-lista-esquerda">
           <li>
-            <img class="logo" src="imaxes\Logos\LogoELIBO.png" height="60">
+            <div class = "contenedor_imaxe">
+              <img id="logo" src="imaxes\Logos\logo_elibo.svg">
+            </div>
           </li>
           <li>
             <ul class="lista lista-flex">
@@ -34,7 +36,9 @@
 
         <ul class="lista lista-flex" id="nav-lista-dereita">
           <li id="desplegable">
-            <img class="fotoPerfil" src="imaxes\FotoPerfil.jpg" width="80">
+            <div class="contenedor_imaxe" id="fotos">
+              <img class="fotoPerfil" src="imaxes\FotoPerfil.jpg" width="80">
+            </div>
             <ul class="lista" id="menu-desplegable">
               <!-- principio menu desplegable -->
              <li class="desplegable-item"><a class="nav-enlace" href="perfil.html">Perfil</a></li>
@@ -44,8 +48,9 @@
             <!-- final menu desplegable -->
           </li>
           <li>
-            <div id="div_mais">
-              <img id="fotoMais" src="imaxes\Logos\LogoMais.svg">
+            <div class="contenedor_imaxe contenedor_fotomais">
+              <img class="fotoMais top" src="imaxes\Logos\LogoMais_baleiro.svg">
+              <!--<img class="fotoMais" src="imaxes\Logos\LogoMais.svg">-->
             </div>
           </li>
         </ul>
