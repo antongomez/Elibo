@@ -4,9 +4,14 @@
   box-sizing: border-box; /*Facilitar o dimensianamento dos elementos. Por defecto esta en content-box*/
 }
 
+@font-face{
+  font-family: Helvetica Now;
+  src: url("../fontes/HelveticaNow_Regular.ttf");
+}
+
 body {
   background-color: C0C0C0;
-  font-family: Rubik;   /*Non a esta collendo*/
+  font-family: Helvetica Now, Helvetica;
   padding: 90px 20px 0; /*Arriba | Esquerda e Dereita | Abaixo*/
 }
 
@@ -99,21 +104,30 @@ body {
   border-radius:300px;
 }
 
-/*.contenedor_fotomais {
-  float: left;
-}
-
-.contenedor_fotomais img {
-  transition: opacity 0.1s ease-in-out;
-}
-
-.contenedor_fotomais img.top:hover {
-  opacity: 0;
-}*/
-
 .fotoMais{
-  line-height: 60px;
   height: 40px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#contenedor2_fotoMais{
+  width: 40px;
+  height: 40px;
+}
+
+#fotoMais_baleiro {
+  float: left;
+  position: relative;
+  top: -40px;
+  z-index: 2;
+}
+
+#fotoMais_cheo{
+    float: left;
+    z-index: 1;
+}
+
+#fotoMais_baleiro:hover {
+  opacity: 0;
 }
 
 /*  Menu desplegable  */
