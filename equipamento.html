@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Equipamento</title>
-  <!--<link rel="stylesheet" href="css\barraNavegacion.css" />-->
+  <link rel="stylesheet" href="css\barraNavegacion.css" />
 </head>
 
 <body>
@@ -11,7 +11,9 @@
     <nav class="nav">
       <ul class="lista lista-flex" id="nav-lista-esquerda">
         <li>
-          <img class="logo" src="imaxes\Logos\LogoELIBO.png" height="60">
+          <div class = "contenedor_imaxe">
+            <img id="logo" src="imaxes\Logos\logo_elibo.svg">
+          </div>
         </li>
         <li>
           <ul class="lista lista-flex">
@@ -33,7 +35,13 @@
 
       <ul class="lista lista-flex" id="nav-lista-dereita">
         <li id="desplegable">
-          <img class="fotoPerfil" src="imaxes\FotoPerfil.jpg" width="80">
+          <div class="contenedor_imaxe" id="fotos">
+            <button class="button">
+              <img class="fotoPerfil" src="imaxes\FotoPerfil.jpg">
+              <!-- Arrow -->
+              <div class="button__arrow button__arrow--down"></div>
+            </button>
+          </div>
           <ul class="lista" id="menu-desplegable">
             <!-- principio menu desplegable -->
            <li class="desplegable-item"><a class="nav-enlace" href="perfil.html">Perfil</a></li>
@@ -43,7 +51,12 @@
           <!-- final menu desplegable -->
         </li>
         <li>
-          <img class="fotoMais" src="imaxes\Logos\LogoMais.svg">
+          <div class="contenedor_imaxe">
+            <div id="contenedor2_fotoMais">
+              <img class="fotoMais" id="fotoMais_cheo" src="imaxes\Logos\LogoMais.svg">
+              <img class="fotoMais" id="fotoMais_baleiro" src="imaxes\Logos\LogoMais_baleiro.svg">
+            </div>
+          </div>
         </li>
       </ul>
     </nav>

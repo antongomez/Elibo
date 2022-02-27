@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: C0C0C0;
+  background-color: #C0C0C0;
   font-family: Helvetica Now, Helvetica;
   padding: 90px 20px 0; /*Arriba | Esquerda e Dereita | Abaixo*/
 }
@@ -86,7 +86,7 @@ body {
 
 /* Para conseguir o subliñado cando se pasa por riba */
 .nav-item-menu-link {
-  padding: 0 5 19 5;
+  padding: 0 5 20 5;
 }
 
 .nav-item-menu-link:hover {
@@ -102,6 +102,40 @@ body {
   height: 50px;
   width: auto;
   border-radius:300px;
+
+  /* Espaciado respecto do boton cara abaixo */
+  margin-right: 10px;
+
+}
+
+.button {
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  /* Spacing */
+  padding: 5px;
+
+  /* Sen borde e cor de fondo */
+  border: 0;
+  background-color: white;
+}
+
+.button__arrow {
+  /* Transparent background */
+  background-color: transparent;
+
+  /* Size */
+  height: 12px;
+  width: 12px;
+}
+
+.button__arrow--down {
+    /* Edges */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    transform: translateY(-25%) rotate(45deg);
 }
 
 .fotoMais{
@@ -158,7 +192,7 @@ body {
 }
 
 .desplegable-item:hover {
-  background: #C0C0C0;
+  background: #EEEEEE;
 }
 
 #logo{
