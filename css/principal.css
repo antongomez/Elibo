@@ -1,0 +1,55 @@
+@import "barraNavegacion.css";
+
+/* Disposicion en tres columnas */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__main {
+  /* Take the remaining height */
+  flex-grow: 1;
+
+  /* Layout the left sidebar, main content and right sidebar */
+  display: flex;
+  flex-direction: row;
+}
+
+.container__left {
+  width: 25%;
+}
+
+.container__middle {
+  /* Take the remaining width */
+  flex-grow: 1;
+
+  margin: 0 20 0 20;
+}
+
+.container__right {
+  width: 20%;
+}
+
+/* Actividades*/
+.actividade {
+  background-color: white;
+  margin: 0 0 6 0;
+  padding: 10 20 10 10;
+  border-radius: 10px;
+}
+
+.fotoPerfil{
+  height: 100px;
+  width: auto;
+  border-radius: 50%;
+
+  /* Espaciado respecto do boton cara abaixo */
+  margin-right: 10px;
+}
+
+.actividade > .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}

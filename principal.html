@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Páxina Prinicpal</title>
-  <link rel="stylesheet" href="css\barraNavegacion.css" />
+  <link rel="stylesheet" href="css\principal.css" />
 </head>
 
 <body>
@@ -38,7 +38,7 @@
         <li id="desplegable">
           <div class="contenedor_imaxe" id="fotos">
             <button class="button">
-              <img class="fotoPerfil" src="imaxes\FotoPerfil.jpg">
+              <img class="fotoPerfil-nav" src="imaxes\FotoPerfil.jpg">
               <!-- Arrow -->
               <div class="button__arrow button__arrow--down"></div>
             </button>
@@ -63,50 +63,62 @@
     </nav>
   </header>
 
-    <section id="seccionEsquerda">
-      <img src="imaxes\FotoPerfil.jpg" width="80">
-      <a href="#">Anton Gomez Lopez</a>
-      <ul>
+  <main class="container__main">
+    <aside class="container__left">
+      <figure>
+        <img class="fotoPerfil" src="imaxes\FotoPerfil.jpg">
+        <a href="#">Anton Gomez Lopez</a>
+      </figure>
+
+      <ul class="lista lista-flex">
         <li>Actividades <strong>100</strong></li>
         <!-- Anidar listas para os numeros -->
         <li>Seguidores <strong>10</strong></li>
         <li>Seguidos <strong>10</strong></li>
       </ul>
 
-      <ul>
+      <ul class="lista">
         <li>Última actividade</li>
         <li><strong>Rodaxe á mañá</strong> • Onte</li>
       </ul>
-    </section>
+    </aside>
 
-    <section id = "actividade2">
-      <h3>Francisco Gómez Sueiras</h3>
-      <p>Hoxe, ás 14:03 • Santiago de Compostela</p>
-      <h1>3x2000</h1>
-      <ul>
-        <li>Distancia <strong>10,89 km</strong></li>
-        <li>Ritmo <strong>4:43 /km</strong></li>
-        <li>Tempo <strong>51min 23s</strong></li>
-      </ul>
-      <p>3 elis<p>
+    <section class="container__middle">
+      <article class="actividade">
+        <h3>Francisco Gómez Sueiras</h3>
+        <p>Hoxe, ás 14:03 • Santiago de Compostela</p>
+        <h1>3x2000</h1>
+        <ul class="lista lista-flex">
+          <li>Distancia <strong>10,89 km</strong></li>
+          <li>Ritmo <strong>4:43 /km</strong></li>
+          <li>Tempo <strong>51min 23s</strong></li>
+        </ul>
+        <div class="footer">
+          <figure>
+            <img src="imaxes\Logos\logo_like_elibo.svg" width="25">
+          </figure>
+          <div>
+            <p>3 elis</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="actividade">
+        <h3>Manuel Timiraos López</h3>
+        <p>Hoxe, ás 11:02 • Santiago de Compostela</p>
+        <img src="imaxes\Logos\logo_correr.svg" width="25">
+        <h1>Rodaxe por Santiago</h1>
+        <ul>
+          <li>Distancia <strong>8,00 km</strong></li>
+          <li>Ritmo <strong>4:00 /km</strong></li>
+          <li>Tempo <strong>32min 00s</strong></li>
+        </ul>
+        <p>2 elis<p>
         <p><img src="imaxes\Logos\logo_like_elibo.svg" width="25"></p>
+      </article>
     </section>
 
-    <section id = "actividade1">
-      <h3>Manuel Timiraos López</h3>
-      <p>Hoxe, ás 11:02 • Santiago de Compostela</p>
-      <img src="imaxes\Logos\logo_correr.svg" width="25">
-      <h1>Rodaxe por Santiago</h1>
-      <ul>
-        <li>Distancia <strong>8,00 km</strong></li>
-        <li>Ritmo <strong>4:00 /km</strong></li>
-        <li>Tempo <strong>32min 00s</strong></li>
-      </ul>
-      <p>2 elis<p>
-      <p><img src="imaxes\Logos\logo_like_elibo.svg" width="25"></p>
-    </section>
-
-    <section id = "estatisticas">
+    <aside class="container__right">
       <table>
         <caption><strong>As miñas estatísticas</strong><br>
         <img src="imaxes\Logos\logo_ciclismo.svg" width="25">
@@ -124,7 +136,7 @@
         <tr><td>Carreiras</td><td>50</td></tr>
 
       </table>
-    </section>
-
+    </aside>
+  </main>
   </body>
 </html>

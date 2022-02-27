@@ -1,0 +1,27 @@
+* {
+  margin: 0;              /*Quita as marxes predeterminadas polo navegador*/
+  padding: 0;
+  box-sizing: border-box; /*Facilitar o dimensianamento dos elementos. Por defecto esta en content-box*/
+}
+
+@font-face{
+  font-family: Helvetica Now;
+  src: url("../fontes/HelveticaNow_Regular.ttf");
+}
+
+body {
+  background-color: #C0C0C0;
+  font-family: Helvetica Now, Helvetica;
+  padding: 90px 20px 0; /*Arriba | Esquerda e Dereita | Abaixo*/
+}
+
+/* Listas */
+
+.lista{
+    list-style: none;   /*Quita os puntos da lista*/
+}
+
+/*  Listas con disposicion horizontal  */
+.lista-flex {
+  display: flex;
+}
