@@ -65,37 +65,94 @@
 
   <main class="container__main">
     <aside class="container__left">
-      <figure>
-        <img class="fotoPerfil" src="imaxes\FotoPerfil.jpg">
-        <a href="#">Anton Gomez Lopez</a>
-      </figure>
+      <div class="div-float">
+        <figure class="div-center">
+          <img class="fotoPerfil" src="imaxes\FotoPerfil.jpg">
+          <h1><a class="nav-enlace" href="perfil.html">Antón Gómez López</a></h1>
+        </figure>
 
-      <ul class="lista lista-flex">
-        <li>Actividades <strong>100</strong></li>
-        <!-- Anidar listas para os numeros -->
-        <li>Seguidores <strong>10</strong></li>
-        <li>Seguidos <strong>10</strong></li>
-      </ul>
+        <ul class="lista lista-flex barraCentral">
+          <li>
+            <div>
+              <p>Actividades</p>
+              <h2>100</h2>
+            </div>
+          </li>
+          <li>
+            <div class="vlinha"></div>
+          </li>
+          <li>
+            <div>
+              <p>Seguidores</p>
+              <h2>10</h2>
+            </div>
+          </li>
+          <li>
+            <div class="vlinha"></div>
+          </li>
+          <li>
+            <div>
+              <p>Seguidos</p>
+              <h2>10</h2>
+            </div>
+          </li>
+        </ul>
 
-      <ul class="lista">
-        <li>Última actividade</li>
-        <li><strong>Rodaxe á mañá</strong> • Onte</li>
-      </ul>
+        <div class="hlinha"></div>
+
+        <ul class="lista barraInferior">
+          <li>Última actividade</li>
+          <li><strong>Rodaxe á mañá</strong> • Onte</li>
+        </ul>
+      <div>
     </aside>
 
     <section class="container__middle">
       <article class="actividade">
-        <h3>Francisco Gómez Sueiras</h3>
-        <p>Hoxe, ás 14:03 • Santiago de Compostela</p>
-        <h1>3x2000</h1>
-        <ul class="lista lista-flex">
-          <li>Distancia <strong>10,89 km</strong></li>
-          <li>Ritmo <strong>4:43 /km</strong></li>
-          <li>Tempo <strong>51min 23s</strong></li>
+        <div class="lista-flex div-center barra-actividade">
+          <figure>
+            <img class="fotoPerfil-actividade" src="imaxes\fotoAmigo1.jpg">
+          </figure>
+          <div>
+            <h3>Francisco Gómez Sueiras</h3>
+            <p>Hoxe, ás 14:03 • Santiago de Compostela</p>
+          </div>
+        </div>
+        <div class="lista-flex div-center barra-actividade">
+          <figure>
+            <img class="logoActividade" src="imaxes\Logos\logo_correr.svg">
+          </figure>
+          <h1>3x2000</h1>
+        </div>
+        <ul class="lista lista-flex barra-actividade">
+          <li>
+            <div>
+              <p>Distancia</p>
+              <h2>10,89 km</h2>
+            </div>
+          </li>
+          <li>
+            <div class="vlinha"></div>
+          </li>
+          <li>
+            <div>
+              <p>Ritmo</p>
+              <h2>4:43 /km</h2>
+            </div>
+          </li>
+          <li>
+            <div class="vlinha"></div>
+          </li>
+          <li>
+            <div>
+              <p>Tempo</p>
+              <h2>51min 23s</h2>
+            </div>
+          </li>
         </ul>
         <div class="footer">
           <figure>
-            <img src="imaxes\Logos\logo_like_elibo.svg" width="25">
+            <img class="logoLike" src="imaxes\Logos\logo_like_elibo.svg">
           </figure>
           <div>
             <p>3 elis</p>
@@ -104,17 +161,55 @@
       </article>
 
       <article class="actividade">
-        <h3>Manuel Timiraos López</h3>
-        <p>Hoxe, ás 11:02 • Santiago de Compostela</p>
-        <img src="imaxes\Logos\logo_correr.svg" width="25">
-        <h1>Rodaxe por Santiago</h1>
-        <ul>
-          <li>Distancia <strong>8,00 km</strong></li>
-          <li>Ritmo <strong>4:00 /km</strong></li>
-          <li>Tempo <strong>32min 00s</strong></li>
+        <div class="lista-flex div-center barra-actividade">
+          <figure>
+            <img class="fotoPerfil-actividade" src="imaxes\fotoAmigo2.jpg">
+          </figure>
+          <div>
+            <h3>Manuel Timiraos López</h3>
+            <p>Hoxe, ás 11:00 • O Burgo</p>
+          </div>
+        </div>
+        <div class="lista-flex div-center barra-actividade">
+          <figure>
+            <img class="logoActividade" src="imaxes\Logos\logo_correr.svg">
+          </figure>
+          <h1>Rodaxe suave</h1>
+        </div>
+        <ul class="lista lista-flex barra-actividade">
+          <li>
+            <div>
+              <p>Distancia</p>
+              <h2>10,00 km</h2>
+            </div>
+          </li>
+          <li>
+            <div class="vlinha"></div>
+          </li>
+          <li>
+            <div>
+              <p>Ritmo</p>
+              <h2>5:00 /km</h2>
+            </div>
+          </li>
+          <li>
+            <div class="vlinha"></div>
+          </li>
+          <li>
+            <div>
+              <p>Tempo</p>
+              <h2>50min 00s</h2>
+            </div>
+          </li>
         </ul>
-        <p>2 elis<p>
-        <p><img src="imaxes\Logos\logo_like_elibo.svg" width="25"></p>
+        <div class="footer">
+          <figure>
+            <img class="logoLike" src="imaxes\Logos\logo_like_elibo.svg" width="25">
+          </figure>
+          <div>
+            <p>3 elis</p>
+          </div>
+        </div>
       </article>
     </section>
 

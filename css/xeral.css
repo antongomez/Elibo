@@ -4,15 +4,68 @@
   box-sizing: border-box; /*Facilitar o dimensianamento dos elementos. Por defecto esta en content-box*/
 }
 
+@font-face {
+  font-family: Helvetica Now;
+  src: url("../fontes/HelveticaNowText-ExtraLight.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Helvetica Now;
+  src: url("../fontes/HelveticaNowText-Light.ttf");
+  font-weight: 200;
+}
+
 @font-face{
   font-family: Helvetica Now;
   src: url("../fontes/HelveticaNow_Regular.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Helvetica Now;
+  src: url("../fontes/HelveticaNowText-Medium.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Helvetica Now;
+  src: url("../fontes/HelveticaNowText-Bold.ttf");
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: Helvetica Now;
+  src: url("../fontes/HelveticaNow_ExtraBold.ttf");
+  font-weight: 600;
 }
 
 body {
-  background-color: #C0C0C0;
+  background-color: #EEEEEE;
   font-family: Helvetica Now, Helvetica;
-  padding: 90px 20px 0; /*Arriba | Esquerda e Dereita | Abaixo*/
+  padding: 110px 162px 0; /*Arriba | Esquerda e Dereita | Abaixo*/
+  font-size: 15px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 150%;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 125%;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 100%;
+  font-weight: 300;
+}
+
+p {
+  font-size: 85%;
+  font-weight: 200;
 }
 
 /* Listas */
@@ -24,4 +77,21 @@ body {
 /*  Listas con disposicion horizontal  */
 .lista-flex {
   display: flex;
+}
+
+/* Para centrar elementos horizontalmente */
+.div-center {
+  align-items: center;
+}
+
+/* Linhas de separacion */
+
+.vlinha {
+  border-left: thin solid #EEEEEE;
+  height:100%;
+}
+
+.hlinha {
+  border-top: thin solid #EEEEEE;
+  width:100%;
 }

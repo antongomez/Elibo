@@ -37,7 +37,6 @@
 
 .nav-item {
   font-style: normal;
-  font-size: 15px;    /*Axustar ao tipo e tamanho de letra*/
 }
 
 /* Clase dos enlaces do menu */
@@ -162,7 +161,7 @@
 }
 
 .desplegable-item:hover {
-  background: #EEEEEE;
+  background: #C0C0C0;
 }
 
 #logo{

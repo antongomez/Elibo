@@ -16,7 +16,11 @@
 }
 
 .container__left {
-  width: 25%;
+  width: 280;
+  min-width: 280;
+  background-color: white;
+  padding: 10;
+  border-radius: 8px;
 }
 
 .container__middle {
@@ -27,7 +31,40 @@
 }
 
 .container__right {
-  width: 20%;
+  width: 200;
+  min-width: 180;
+  background-color: white;
+  padding: 10;
+  border-radius: 8px;
+}
+
+/* Panel Esquerdo */
+
+.div-float {
+  position: relative;
+  top: -40;
+}
+.container__left figure {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20;
+}
+
+.fotoPerfil {
+  /* Padding de 10, tamanho de 100, se subimos 50, non sera exactamete a metade */
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10;
+}
+
+.container__left .barraCentral {
+  justify-content: space-between;
+  margin-bottom: 20;
+}
+
+.container__left .barraInferior {
+  margin: 20 0;
 }
 
 /* Actividades*/
@@ -35,16 +72,9 @@
   background-color: white;
   margin: 0 0 6 0;
   padding: 10 20 10 10;
-  border-radius: 10px;
-}
-
-.fotoPerfil{
-  height: 100px;
-  width: auto;
-  border-radius: 50%;
-
-  /* Espaciado respecto do boton cara abaixo */
-  margin-right: 10px;
+  border-radius: 8px;
+  min-width: 400;
+  max-width: 500;
 }
 
 .actividade > .footer {
@@ -52,4 +82,36 @@
   align-items: center;
   justify-content: space-between;
   padding: 0;
+}
+
+.actividade figure {
+  margin: 0 12 0 0;
+}
+
+.actividade ul {
+  margin-left: 50;
+}
+
+.actividade ul li {
+  margin: 0 5 0 5;
+}
+
+.logoActividade {
+  width: 30;
+  margin: 0 5 0 5;
+}
+
+.fotoPerfil-actividade{
+  height: 40;
+  width: auto;
+  border-radius: 50%;
+}
+
+.barra-actividade {
+  margin-bottom: 10;
+}
+
+.logoLike {
+  height: 30;
+  margin: 0 5;
 }
