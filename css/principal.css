@@ -16,8 +16,9 @@
 }
 
 .container__left {
-  width: 280;
-  min-width: 280;
+  width: 290;
+  min-width: 290;
+  height: 243;
   background-color: white;
   padding: 10;
   border-radius: 8px;
@@ -26,16 +27,26 @@
 .container__middle {
   /* Take the remaining width */
   flex-grow: 1;
-
   margin: 0 20 0 20;
 }
 
 .container__right {
-  width: 200;
-  min-width: 180;
+  width: 290;
+  min-width: 290;
+  height: 290;
   background-color: white;
   padding: 10;
   border-radius: 8px;
+}
+
+/* Panel Dereito */
+
+table, th, td {
+  border: 1px solid;
+}
+
+.container__right img {
+  width: 30;
 }
 
 /* Panel Esquerdo */
@@ -59,12 +70,24 @@
 }
 
 .container__left .barraCentral {
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 20;
 }
 
+.container__left .barraCentral h2,
+.container__left .barraCentral p{
+  text-align: center;
+}
+
+.elemento-lista {
+  /* O ancho son 290-20=270. Dividimos en tres o espazo restante*/
+  /* Non me vale centralos con justify-content: center; soamente porque non
+   teñen a mesma anchura */
+  min-width: 90;
+}
+
 .container__left .barraInferior {
-  margin: 20 0;
+  padding: 20 0;
 }
 
 /* Actividades*/
@@ -74,7 +97,7 @@
   padding: 10 20 10 10;
   border-radius: 8px;
   min-width: 400;
-  max-width: 500;
+  max-width: 600;
 }
 
 .actividade > .footer {
