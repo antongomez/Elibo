@@ -1,0 +1,52 @@
+@import "barraNavegacion.css";
+
+.container__main__perfil{
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.foto_cabecera{
+  width: 764;
+  height: 295px;
+  display: block;
+  margin: auto;
+  margin-top: -50;
+}
+
+.fotoPerfil {
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+  border-style: solid;
+  display: block;
+  margin: auto;
+  margin-top: -64;
+}
+
+.nombre_perfil{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container__center{
+  background-color: white;
+  margin: 20 auto 0 auto;
+  padding: 10 20 10 10;
+  border-radius: 8px;
+  width: 878;
+  height: 216;
+  display: block;
+}
+
+.linea_negra{
+  border-top: 2px solid black;
+  width: 878;
+  margin: 40 auto 40 auto  ;
+  display: block;
+}
+
+.container__inferior{
+  display: flex;
+  flex-direction: row;
+}

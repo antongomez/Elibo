@@ -1,9 +1,10 @@
 <!DOCTYPE>
+<html lang="es">
 <html>
 <head>
   <meta charset="UTF-8" />
   <title>Páxina de Perfil</title>
-  <link rel="stylesheet" href="css\barraNavegacion.css" />
+  <link rel="stylesheet" href="css\perfil.css" />
 </head>
 
 <body>
@@ -62,13 +63,14 @@
     </nav>
   </header>
 
-    <section id="cabecera" style="background-color:white;">
-      <!--Falta aquí la foto de cabecera-->
-      <img src="imaxes\FotoPerfil.jpg" width="130">
-      <h2>Antón Gómez López</h2>
-    </section>
+  <main class="container__main__perfil">
+    <figure>
+      <img class="foto_cabecera" src="imaxes\Encabezado.jpg">
+      <img class="fotoPerfil" src="imaxes\FotoPerfil.jpg">
+      <h1 class="nombre_perfil">Antón Gómez López</h1>
+    </figure>
 
-    <section id="datos_perfil">
+    <section class="container__center">
       <section id="esquerda" style="background-color:white;">
         <p>Biografía</p>
         <p>Atleta do Club Atletismo a Santiago. Marcas persoais:</p>
@@ -83,9 +85,16 @@
         <p>Idade: <strong>21</strong></p>
         <p>Ubicación: <strong>Santiago de Compostela</strong></p>
       </section>
-    <section>
 
-    <hr color="black"><!--línea horizontal-->
+    </section>
+
+    <div class="linea_negra"></div>
+
+
+  </main>
+
+
+
 
     <section id = "actividade2" style="background-color:white;">
       <h3>Antón Gómez López</h3>
