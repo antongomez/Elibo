@@ -1,4 +1,7 @@
 @import "barraNavegacion.css";
+@import "estatisticas.css";
+@import "actividade.css";
+
 
 .container__main__perfil{
   margin-top: 0;
@@ -44,12 +47,9 @@
   border: thin solid #EEEEEE;
 }
 
-
-
 .container__bio ul{
   margin: 2px auto auto 40px;
 }
-
 
 .elemento_centrado{
   display: flex;
