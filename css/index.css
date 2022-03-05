@@ -1,0 +1,60 @@
+@import "barraNavegacion.css";
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.container__main{
+  display: flex;
+  justify-content: center;
+  padding-top: 81px;
+}
+
+.container__izq{
+  width: 570;
+  height: 461;
+  background-color: white;
+  border-radius: 8px;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 61px;
+}
+
+.titulo{
+  color:#FF8A00;
+  font-size:125px;
+  font-weight: 700;
+}
+
+.eslogan{
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.container__dcho{
+  width: 376;
+  height: 514;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 68px;
+}
+
+input[type=text]{
+  width: 324px;
+  height: 63px;
+  border-radius: 12px;
+  border-width: 1px;
+  margin-bottom: 36px;
+}
+
+input[type=text]::placeholder{
+  font-size: 22px;
+  padding: 18px;
+  
+}

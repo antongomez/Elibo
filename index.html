@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Páxina de Inicio</title>
-  <link rel="stylesheet" href="css\barraNavegacion.css" />
+  <link rel="stylesheet" href="css\index.css" />
 </head>
 
 <body>
@@ -27,27 +27,26 @@
         </li>
       </ul>
 
-      
+
     </nav>
   </header>
-
-    <section id="seccionEsquerda" style="background-color:white;">
-      <h1 style="color:#FF8A00; font-size:70px;">ELIBO</h1>
-      <h2>A casa da túa vida activa</h2>
-
+  <main class="container__main">
+    <section class="container__izq">
+      <p class="titulo">ELIBO</p>
+      <p class="eslogan">A casa da túa vida activa</p>
     </section>
 
-    <section id="seccionDereita" style="background-color:white;">
-      <ul>
-        <li><input type="text" placeholder="Nome de usuario"></li>
-        <li><input type="text" placeholder="Contrasinal"></li>
-        <li><a href="principal.html">
-          <input type="button" value="Acceder" style="color:white; background-color:#FF8A00;"></a></li>
-        <hr>
-        <li><input type="button" value="Crear conta" style="background-color:#2E94AB;"></li>
-      </ul>
-
     </section>
+    <section class="container__dcho">
+      <input class="textfield" type="text" placeholder="Nome de usuario">
+      <input class="textfield" type="text" placeholder="Contrasinal">
+      <a href="principal.html">
+        <input type="button" value="Acceder" style="color:white; background-color:#FF8A00;"></a></li>
+      <hr>
+      <input type="button" value="Crear conta" style="background-color:#2E94AB;">
+    </section>
+  </main>
+
 
 
   </body>
