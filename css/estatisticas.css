@@ -1,0 +1,60 @@
+/* Panel Dereito. Estatisticas */
+
+.estatisticas {
+  width: 290;
+  min-width: 290;
+  min-height: 290;
+  height: fit-content;
+  background-color: white;
+  padding: 10;
+  border-radius: 8px;
+}
+
+
+.estatisticas table {
+  width: 100%;
+}
+
+.estatisticas th, .estatisticas td {
+  border-width: 1 0 1 0;
+  border-style: solid;
+  border-color: #EEEEEE;
+  border-collapse: collapse;
+
+  padding: 5;
+  text-align: left;
+
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.estatisticas table, .estatisticas table .celaBotons {
+  border-width: 0 0 1 0;
+  border-collapse: collapse;
+}
+
+.estatisticas table figure{ /* Volver a descargar as fotos con mais padding*/
+  display: flex;
+  justify-content: center;
+}
+
+.estatisticas table caption {
+  text-align: left;
+  margin: 5 0 10 0;
+}
+
+.estatisticas th {
+  font-weight: 400;
+}
+
+.estatisticas table .odd {
+  background-color: #f7f5f0;
+}
+
+.estatisticas table .dato {
+  font-weight: 300;
+}
+
+.estatisticas img {
+  width: 30;
+}

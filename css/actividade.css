@@ -1,0 +1,47 @@
+.actividade {
+  background-color: white;
+  margin: 0 0 6 0;
+  padding: 10 20 10 10;
+  border-radius: 8px;
+  min-width: 400;
+  max-width: 600;
+}
+
+.actividade footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.actividade figure {
+  margin: 0 12 0 0;
+}
+
+.actividade ul {
+  margin-left: 50;
+}
+
+.actividade ul li {
+  margin: 0 5 0 5;
+}
+
+.actividade .logoActividade {
+  width: 30;
+  margin: 0 5 0 5;
+}
+
+.fotoPerfil-actividade{
+  height: 40;
+  width: auto;
+  border-radius: 50%;
+}
+
+.actividade header {
+  margin-bottom: 10;
+}
+
+.logoLike {
+  height: 30;
+  margin: 0 5;
+}
