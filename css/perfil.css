@@ -1,0 +1,84 @@
+@import "barraNavegacion.css";
+
+.container__main__perfil{
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto_cabecera{
+  width: 764;
+  height: 295px;
+  margin: auto;
+  margin-top: -50;
+}
+
+.fotoPerfil {
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+  border-style: solid;
+  margin: auto;
+  margin-top: -90;
+}
+
+.nombre_perfil{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container__bio{
+  background-color: white;
+  margin: 20 auto 0 auto;
+  border-radius: 8px;
+  max-width: 878;
+  max-height: 216;
+  display: grid;
+  grid-template-columns: 439px 284px 155px;
+  grid-template-rows: auto auto;
+  font-size: 18;
+}
+
+.container__bio div{
+  border: thin solid #EEEEEE;
+}
+
+
+
+.container__bio ul{
+  margin: 2px auto auto 40px;
+}
+
+
+.elemento_centrado{
+  display: flex;
+  align-items: center;
+  padding-left: 20;
+}
+
+.linea_negra{
+  border-top: 2px solid black;
+  width: 878;
+  margin: 40 auto 40 auto  ;
+  display: block;
+}
+
+.container__inferior{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+.container__actividades {
+  /* Take the remaining width */
+  display: flex;
+  flex-direction: column;
+  margin: 0 112 0 0;
+}
+
+.actividade{
+  /*Sobreescribimos la actividad para fijar su tamaño*/
+  max-width: 400;
+}

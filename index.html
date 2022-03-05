@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Páxina de Inicio</title>
-  <link rel="stylesheet" href="css\barraNavegacion.css" />
+  <link rel="stylesheet" href="css\index.css" />
 </head>
 
 <body>
@@ -18,12 +18,6 @@
         <li>
           <ul class="lista lista-flex">
             <li class="nav-item nav-item-menu">
-              <a href="actividades.html" class="nav-enlace nav-item-menu-link">Actividades</a>
-            </li>
-            <li class="nav-item nav-item-menu">
-              <a href="deportistas.html" class="nav-enlace nav-item-menu-link">Deportistas</a>
-            </li>
-            <li class="nav-item nav-item-menu">
               <a href="novidades.html" class="nav-enlace nav-item-menu-link">Novidades</a>
             </li>
             <li class="nav-item nav-item-menu">
@@ -33,52 +27,26 @@
         </li>
       </ul>
 
-      <ul class="lista lista-flex" id="nav-lista-dereita">
-        <li id="desplegable">
-          <div class="contenedor_imaxe" id="fotos">
-            <button class="button">
-              <img class="fotoPerfil-nav" src="imaxes\FotoPerfil.jpg">
-              <!-- Arrow -->
-              <div class="button__arrow button__arrow--down"></div>
-            </button>
-          </div>
-          <ul class="lista" id="menu-desplegable">
-            <!-- principio menu desplegable -->
-           <li class="desplegable-item"><a class="nav-enlace" href="perfil.html">Perfil</a></li>
-           <li class="desplegable-item"><a class="nav-enlace"href="equioamento.html">Equipamento</a></li>
-           <li class="desplegable-item"><a class="nav-enlace"href="index.html">Pechar sesión</a></li>
-          </ul>
-          <!-- final menu desplegable -->
-        </li>
-        <li>
-          <div class="contenedor_imaxe">
-            <div id="contenedor2_fotoMais">
-              <img class="fotoMais" id="fotoMais_cheo" src="imaxes\Logos\LogoMais.svg">
-              <img class="fotoMais" id="fotoMais_baleiro" src="imaxes\Logos\LogoMais_baleiro.svg">
-            </div>
-          </div>
-        </li>
-      </ul>
+
     </nav>
   </header>
-
-    <section id="seccionEsquerda" style="background-color:white;">
-      <h1 style="color:#FF8A00; font-size:70px;">ELIBO</h1>
-      <h2>A casa da túa vida activa</h2>
-
+  <main class="container__main">
+    <section class="container__izq">
+      <p class="titulo">ELIBO</p>
+      <p class="eslogan">A casa da túa vida activa</p>
     </section>
 
-    <section id="seccionDereita" style="background-color:white;">
-      <ul>
-        <li><input type="text" placeholder="Nome de usuario"></li>
-        <li><input type="text" placeholder="Contrasinal"></li>
-        <li><a href="principal.html">
-          <input type="button" value="Acceder" style="color:white; background-color:#FF8A00;"></a></li>
-        <hr>
-        <li><input type="button" value="Crear conta" style="background-color:#2E94AB;"></li>
-      </ul>
-
     </section>
+    <section class="container__dcho">
+      <input class="textfield" type="text" placeholder="Nome de usuario">
+      <input class="textfield" type="text" placeholder="Contrasinal">
+      <a href="principal.html">
+        <input type="button" value="Acceder" style="color:white; background-color:#FF8A00;"></a></li>
+      <hr>
+      <input type="button" value="Crear conta" style="background-color:#2E94AB;">
+    </section>
+  </main>
+
 
 
   </body>
