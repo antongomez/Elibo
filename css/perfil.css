@@ -49,4 +49,18 @@
 .container__inferior{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+.container__actividades {
+  /* Take the remaining width */
+  display: flex;
+  flex-direction: column;
+  margin: 0 112 0 0;
+}
+
+.actividade{
+  /*Sobreescribimos la actividad para fijar su tamaño*/
+  max-width: 400;
 }
