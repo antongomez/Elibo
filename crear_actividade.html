@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Crear Actividade</title>
-  <link rel="stylesheet" href="css\barraNavegacion.css" />
+  <link rel="stylesheet" href="css\crear_actividade.css" />
 </head>
 
 <body>
@@ -64,44 +64,59 @@
 
     <h1>Crear actividade</h1>
 
-    <section id="seccionSuperior">
-      <ul>
-        <li><h6>Distancia</h6><input type="text"></li>
-        <li><h6>Duración</h6><input type="text"></li>
-        <li><h6>Deporte</h6><input type="text"></li>
-        <li><h6>Material</h6><input type="text"></li>
-        <li><h6>Data</h6><input type="text"></li>
-        <li><h6>Hora</h6><input type="text"></li>
-        <li><h6>Ubicación</h6><input type="text"></li>
-      </ul>
+    <section class="container__sup">
+      <div class="elemento_formulario">
+        <p>Distancia</p>
+        <input type="text">
+      </div>
+      <div class="elemento_formulario">
+        <p>Duración</p>
+        <input type="text">
+      </div>
+      <div class="elemento_formulario">
+        <p>Deporte</p>
+        <input type="text">
+      </div>
+      <div class="elemento_formulario">
+        <p>Material</p>
+        <input type="text">
+      </div>
+      <div class="elemento_formulario">
+        <p>Data</p>
+        <input type="text">
+      </div>
+      <div class="elemento_formulario">
+        <p>Hora</p>
+        <input type="text">
+      </div>
+      <div class="elemento_formulario">
+        <p>Ubicación</p>
+        <input type="text">
+      </div>
     </section>
 
-    <section id="seccionInferior">
-      <ul>
-        <li><h6>Título</h6><input type="text"></li>
-        <li>
-          <h6>Descripción</h6>
-          <textarea rows="7" cols="50"></textarea>
-        </li>
-      </ul>
-
+    <section class="container__inf">
+      <div class="elemento_formulario2">
+        <p>Título</p>
+        <input type="text">
+      </div>
+      <div class="elemento_formulario2">
+        <p>Descripción</p>
+        <textarea></textarea>
+      </div>
     </section>
 
-    <section id="botons">
-      <ul>
-        <li>
-          <a href="principal.html">
-            <input type="button" value="Crear" style="color:white; background-color:#FF8A00;">
-          </a>
-        </li>
-        <li>
-          <a href="principal.html">
-            <input type="button" value="Cancelar">
-          </a>
-        </li>
-      </ul>
-    </section>
+    <section class="container__botones">
+      <div class="boton">
+        <a href="principal.html">
+          <input type="button" value="Crear" style="color:white; background-color:#FF8A00;">
+      </div>
+      <div class="boton">
+        <a href="principal.html">
+        <input type="button" value="Cancelar"; style="background-color: white">
+      </div>
 
+    </section>
 
   </body>
 </html>

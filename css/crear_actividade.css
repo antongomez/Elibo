@@ -1,0 +1,79 @@
+@import "barraNavegacion.css";
+
+input, textarea{
+  border-radius: 6px;
+  border-width: 1px;
+}
+
+.container__sup{
+  width: 832;
+  height: 272;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 39px;
+  padding-left: 37;
+}
+
+.elemento_formulario{
+  margin-right: 37px;
+}
+
+.elemento_formulario p{
+  margin-bottom: 13px;
+  font-size: 17;
+}
+
+.elemento_formulario input{
+  width: 157px;
+  height: 35px;
+}
+
+.container__inf{
+  width: 656;
+  height: 398;
+  background-color: white;
+  padding: 10;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 39px;
+  padding-left: 37;
+}
+
+.elemento_formulario2{
+  margin-bottom: 34px;
+}
+
+.elemento_formulario2 p{
+  margin-bottom: 13px;
+  font-size: 17;
+}
+
+.elemento_formulario2 input{
+  width: 255px;
+  height: 35px;
+}
+
+.elemento_formulario2 textarea{
+  width: 570;
+  height: 160;
+}
+
+.container__botones{
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.boton input{
+  width: 116px;
+  height: 35px;
+  margin-right: 29px;
+  font-size: 17;
+  border-style: none;
+}
