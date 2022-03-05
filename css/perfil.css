@@ -29,14 +29,33 @@
   margin-top: 20px;
 }
 
-.container__center{
+.container__bio{
   background-color: white;
   margin: 20 auto 0 auto;
-  padding: 10 20 10 10;
   border-radius: 8px;
-  width: 878;
-  height: 216;
-  display: block;
+  max-width: 878;
+  max-height: 216;
+  display: grid;
+  grid-template-columns: 439px 284px 155px;
+  grid-template-rows: auto auto;
+  font-size: 18;
+}
+
+.container__bio div{
+  border: thin solid #EEEEEE;
+}
+
+
+
+.container__bio ul{
+  margin: 2px auto auto 40px;
+}
+
+
+.elemento_centrado{
+  display: flex;
+  align-items: center;
+  padding-left: 20;
 }
 
 .linea_negra{
