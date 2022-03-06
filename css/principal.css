@@ -25,7 +25,6 @@
   background-color: white;
   padding: 10;
   border-radius: 8px;
-  z-index: -1;
 }
 
 .container__middle {
@@ -77,4 +76,8 @@
 
 .container__left .barraInferior {
   padding: 20 0 0 0;
+}
+
+.container__left .nav-enlace:hover {
+  text-decoration: underline;
 }

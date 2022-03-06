@@ -9,6 +9,7 @@
   position: fixed;  /*A barra de navegacion quedara sempre arriba fixada cando facemos scroll*/
   top: 0;           /*Alineacion da barra de navegacion fixa arriba a esquerda*/
   left: 0;
+  z-index: 1;
 }
 
 .nav {

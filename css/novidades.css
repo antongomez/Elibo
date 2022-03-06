@@ -1,0 +1,21 @@
+@import "barraNavegacion.css";
+
+main header {
+  margin-bottom: 10;
+}
+
+main h6 {
+  font-size: 80%;
+  font-weight: 200;
+
+  margin-top: 2;
+  margin-bottom: 5;
+}
+
+main article {
+  background-color: white;
+  padding: 10;
+  
+
+  margin-bottom: 10;
+}
