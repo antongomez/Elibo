@@ -1,0 +1,79 @@
+@import "barraNavegacion.css";
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__vertical{
+  margin-top: 100px;
+  width: 81%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+}
+
+.buscador{
+  margin-top: 35px;
+  height: 92px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.buscador input[type=text]{
+  width: 135px;
+  height: 36px;
+  margin-right: 29px;
+  font-size: 17;
+  font-weight: 700;
+  border-style: none;
+  border-radius: 8px;
+}
+
+.deportista{
+  height: 134px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.deportista_impar{
+  background-color: #EEEEEE;
+}
+
+.deportista_par{
+  background-color: white;
+}
+
+.deportista h4{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.deportista p{
+  font-size: 20px;
+}
+
+
+.deportista input[type=button]{
+  width: 135px;
+  height: 36px;
+  margin-right: 29px;
+  font-size: 17;
+  font-weight: 700;
+  border-style: none;
+  border-radius: 8px;
+  color:white;
+  background-color:#FF8A00;
+}
+
+.fotoPerfil {
+  margin-left: 50px;
+  height: 70%;
+  width: height;
+  border-radius: 50%;
+}
