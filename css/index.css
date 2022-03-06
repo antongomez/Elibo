@@ -46,6 +46,8 @@ body{
 }
 
 input[type=text]{
+  font-size: 22px;
+  padding: 18px;
   width: 324px;
   height: 63px;
   border-radius: 12px;
@@ -53,8 +55,38 @@ input[type=text]{
   margin-bottom: 36px;
 }
 
-input[type=text]::placeholder{
+.boton_acceder{
   font-size: 22px;
+  font-weight: 700;
   padding: 18px;
-  
+  color:  white;
+  background-color: #FF8A00;
+  width: 324px;
+  height: 51px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: none;
+  padding: 15px;
+}
+
+.linea_h{
+  border-top: thin solid #EEEEEE;
+  width: 347px;
+  margin-top: 47px;
+  margin-bottom: 44px;
+  border-width: 3px;
+}
+
+.boton_crear{
+   font-size: 22px;
+   font-weight: 700;
+   padding: 18px;
+   color:  white;
+   background-color: #2E94AB;
+   width: 186px;
+   height: 51px;
+   border-radius: 12px;
+   border-width: 1px;
+   border-style: none;
+   padding: 15px;
 }

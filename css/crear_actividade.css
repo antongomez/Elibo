@@ -30,6 +30,7 @@ input, textarea{
 .elemento_formulario input{
   width: 157px;
   height: 35px;
+  padding: 5px;
 }
 
 .container__inf{
@@ -58,11 +59,13 @@ input, textarea{
 .elemento_formulario2 input{
   width: 255px;
   height: 35px;
+  padding: 5px;
 }
 
 .elemento_formulario2 textarea{
   width: 570;
   height: 160;
+  padding: 5px;
 }
 
 .container__botones{
