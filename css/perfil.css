@@ -1,6 +1,6 @@
-@import "barraNavegacion.css";
-@import "estatisticas.css";
-@import "actividade.css";
+@import "comuns/barraNavegacion.css";
+@import "comuns/estatisticas.css";
+@import "comuns/actividade.css";
 
 
 .container__main__perfil{

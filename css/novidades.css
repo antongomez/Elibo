@@ -1,4 +1,4 @@
-@import "barraNavegacion.css";
+@import "comuns/barraNavegacion.css";
 
 main header {
   margin-bottom: 10;
@@ -15,7 +15,7 @@ main h6 {
 main article {
   background-color: white;
   padding: 10;
-  
+
 
   margin-bottom: 10;
 }

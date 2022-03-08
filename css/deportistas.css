@@ -1,4 +1,4 @@
-@import "barraNavegacion.css";
+@import "comuns/barraNavegacion.css";
 
 body{
   margin: 0;
@@ -58,8 +58,7 @@ body{
   font-size: 20px;
 }
 
-
-.deportista input[type=button]{
+.deportista button{
   width: 135px;
   height: 36px;
   margin-right: 29px;

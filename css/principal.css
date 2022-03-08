@@ -1,6 +1,6 @@
-@import "barraNavegacion.css";
-@import "actividade.css";
-@import "estatisticas.css";
+@import "comuns/barraNavegacion.css";
+@import "comuns/actividade.css";
+@import "comuns/estatisticas.css";
 
 /* Disposicion en tres columnas */
 .container {
@@ -31,10 +31,6 @@
   /* Take the remaining width */
   flex-grow: 1;
   margin: 0 20 0 20;
-}
-
-.container__right {
-
 }
 
 /* Panel Esquerdo */

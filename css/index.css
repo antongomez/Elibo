@@ -1,4 +1,4 @@
-@import "barraNavegacion.css";
+@import "comuns/barraNavegacion.css";
 
 body{
   margin: 0;
@@ -24,14 +24,15 @@ body{
 }
 
 .titulo{
-  color:#FF8A00;
+  color: #FF8A00;
   font-size:125px;
   font-weight: 700;
 }
 
-.eslogan{
+.eslogan {
   font-size: 50px;
   font-weight: 300;
+  color: #8f8f8f;
 }
 
 .container__dcho{
@@ -45,14 +46,34 @@ body{
   padding-top: 68px;
 }
 
+/* Eliminamos o bordeado cando se fai focus */
+input:focus, button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: hand;
+}
+
 input[type=text]{
   font-size: 22px;
   padding: 18px;
   width: 324px;
   height: 63px;
   border-radius: 12px;
-  border-width: 1px;
+  border-width: 2px;
   margin-bottom: 36px;
+  /* Eliminamos o efecto do borde */
+  border-style: solid;
+}
+
+input[type=text]:hover {
+  border-radius: 12px;
+  border-color: #FF8A00;
+}
+
+input[type=text]:focus {
+  border-width: 3;
 }
 
 .boton_acceder{
@@ -64,9 +85,17 @@ input[type=text]{
   width: 324px;
   height: 51px;
   border-radius: 12px;
-  border-width: 1px;
-  border-style: none;
-  padding: 15px;
+  border-width: 0;
+  padding: 10;
+}
+
+.boton_acceder:hover {
+  /* Cor un pelin mais escura que a cor de fondo */
+  background-color: #f08200;
+}
+
+.boton_acceder:focus {
+  border: 2px solid #ffb863;
 }
 
 .linea_h{
@@ -86,7 +115,15 @@ input[type=text]{
    width: 186px;
    height: 51px;
    border-radius: 12px;
-   border-width: 1px;
-   border-style: none;
-   padding: 15px;
+   border-width: 0;
+   padding: 10;
+}
+
+.boton_crear:hover {
+  /* Cor un pelin mais escura que a cor de fondo */
+  background-color: #2b899e;
+}
+
+.boton_crear:focus {
+  border: 2px solid #5dbacf;
 }
