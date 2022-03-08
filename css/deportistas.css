@@ -22,16 +22,53 @@ body{
   background-color: white;
   display: flex;
   align-items: center;
+  padding: 10;
 }
 
 .buscador input[type=text]{
-  width: 135px;
+  width: 20%;
   height: 36px;
   margin-right: 29px;
-  font-size: 17;
-  font-weight: 700;
-  border-style: none;
+  font-size: 100%;
+  font-weight: 300;
+  border: 1px solid var(--cor-bordes-input); /* Cor gris escura */
   border-radius: 8px;
+  padding: 5 7;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border-width: 2px;
+}
+
+input[type=text]:hover {
+  border-color: var(--cor-laranxa-principal);
+}
+
+.btn_buscar {
+  background-color: white;
+  padding: 7 15;
+
+  font-size: 100%;
+  font-weight: 300;
+
+  border-radius: 2px;
+  border: 1px solid var(--cor-bordes-input);
+
+  outline: none;
+}
+
+.btn_buscar:focus{
+  border-color: #9c9c9c;
+}
+
+.btn_buscar:hover{
+  cursor: hand;
+  background-color: #f5f5f5;
+}
+
+.btn_buscar:active {
+  background-color: #e6e6e6;
 }
 
 .deportista{

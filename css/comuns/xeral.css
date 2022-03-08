@@ -4,6 +4,11 @@
   box-sizing: border-box; /*Facilitar o dimensianamento dos elementos. Por defecto esta en content-box*/
 }
 
+* {
+  --cor-laranxa-principal: #FF8A00;
+  --cor-bordes-input: #b3b3b3;
+}
+
 @font-face {
   font-family: Helvetica Now;
   src: url("../fontes/HelveticaNowText-ExtraLight.ttf");
