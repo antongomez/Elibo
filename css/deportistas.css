@@ -7,6 +7,10 @@ body{
   flex-direction: column;
 }
 
+button:hover {
+  cursor: hand;
+}
+
 .container__vertical{
   margin-top: 100px;
   width: 81%;
@@ -27,21 +31,25 @@ body{
 
 .buscador input[type=text]{
   width: 20%;
+  min-width: max-content;
   height: 36px;
+
   margin-right: 29px;
+
   font-size: 100%;
   font-weight: 300;
+
   border: 1px solid var(--cor-bordes-input); /* Cor gris escura */
   border-radius: 8px;
   padding: 5 7;
   outline: none;
 }
 
-input[type=text]:focus {
+.buscador input[type=text]:focus {
   border-width: 2px;
 }
 
-input[type=text]:hover {
+.buscador input[type=text]:hover {
   border-color: var(--cor-laranxa-principal);
 }
 
@@ -63,7 +71,6 @@ input[type=text]:hover {
 }
 
 .btn_buscar:hover{
-  cursor: hand;
   background-color: #f5f5f5;
 }
 
@@ -74,8 +81,9 @@ input[type=text]:hover {
 .deportista{
   height: 134px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  min-width: max-content;
+  padding: 20 0;
 }
 
 .deportista_impar{
@@ -87,29 +95,67 @@ input[type=text]:hover {
 }
 
 .deportista h4{
-  font-size: 20px;
+  font-size: 133%;
   margin-bottom: 5px;
+  width: max-content;
 }
 
 .deportista p{
-  font-size: 20px;
+  font-size: 133%;
+  width: max-content;
 }
 
 .deportista button{
   width: 135px;
   height: 36px;
-  margin-right: 29px;
-  font-size: 17;
+  font-size: 110%;
   font-weight: 700;
   border-style: none;
   border-radius: 8px;
-  color:white;
-  background-color:#FF8A00;
+  color: white;
+  background-color: var(--cor-laranxa-principal);
+
+  outline: none;
+}
+
+.deportista button:hover, .deportista button:focus{
+  background-color: var(--cor-laranxa-hover);
 }
 
 .fotoPerfil {
-  margin-left: 50px;
-  height: 70%;
-  width: height;
+  width: 90;
   border-radius: 50%;
+}
+
+.figure_fotoPerfil {
+  margin-right: 40;
+}
+
+.div-der p {
+  width: 40%;
+  min-width: max-content;
+  text-align: right;
+  margin-left: 50;
+  margin-right: 50;
+}
+
+.div-esq {
+  min-width: 50%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-left: 60;
+}
+
+.div-der {
+  width: 50%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-right: 80;
+  margin-left: 20;
 }

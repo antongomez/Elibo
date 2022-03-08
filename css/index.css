@@ -81,7 +81,7 @@ input[type=text]:focus {
   font-weight: 700;
   padding: 18px;
   color:  white;
-  background-color: #FF8A00;
+  background-color: var(--cor-laranxa-principal);
   width: 324px;
   height: 51px;
   border-radius: 12px;
@@ -91,11 +91,11 @@ input[type=text]:focus {
 
 .boton_acceder:hover {
   /* Cor un pelin mais escura que a cor de fondo */
-  background-color: #f08200;
+  background-color: var(--cor-laranxa-hover);
 }
 
 .boton_acceder:focus {
-  border: 2px solid #ffb863;
+  border: 2px solid var(--cor-laranxa-bordes-focus);
 }
 
 .linea_h{

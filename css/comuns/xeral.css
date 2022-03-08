@@ -6,6 +6,10 @@
 
 * {
   --cor-laranxa-principal: #FF8A00;
+  --cor-laranxa-hover: #f08200;
+  --cor-laranxa-bordes-focus: #ffb863;
+
+
   --cor-bordes-input: #b3b3b3;
 }
 
