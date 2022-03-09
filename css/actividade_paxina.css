@@ -45,21 +45,50 @@ body{
 
 }
 
-.container__dcho div{
+.container__dcho > div{
   border: thin solid #EEEEEE;
 }
 
 .celda_titulo{
   grid-column: 1 / 4;
+  display: flex;
+  align-items: center;
+}
+
+.celda_titulo h2{
+  margin-left: 10px;
+  font-weight: 300;
 }
 
 .celda_info_principal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
+.celda_info_principal p, h1{
+  margin-left: 20px;
+}
+
+.celda_info_principal h1{
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.foto_perfil-actividade{
+  height: 100px;
+  width: auto;
+  border-radius: 50%;
+  margin-left: 25px;
 }
 
 .celda_descripcion{
+  grid-row: 3 / 5;
+  padding: 15px;
+}
 
-
+.celda_descripcion h3{
+  margin-bottom: 10px;
 }
 
 .celda_grupo_actividade{
@@ -77,11 +106,27 @@ body{
 }
 
 .celda_ritmo{
-
+  grid-column: 2 / 4;
 
 }
 
 .celda_equipamento{
+  grid-row: 4 / 6;
+  grid-column: 2 / 4;
+  padding: 15px;
+}
 
+.celda_equipamento h3{
+  margin-bottom: 15px;
+}
 
+.contenido_centrado{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido_centrado h2{
+  margin-bottom: 15px;
 }
