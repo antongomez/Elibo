@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Actividade</title>
-    <link rel="stylesheet" href="css\comuns\barraNavegacion.css" />
+    <link rel="stylesheet" href="css\actividades.css" />
   </head>
 
   <body>
@@ -62,6 +62,62 @@
         </ul>
       </nav>
     </header>
+
+    <main>
+      <section class="encabezado">
+        <h1>As miñas actividades</h1>
+        <div class="buscador">
+          <input type="search" placeholder="Rodaxe pola manha">
+          <button class="btn_buscar">Buscar</button>
+          <select required>
+            <option value="carreira" selected>Carreira</option>
+            <option value="ciclismo">Ciclismo</option>
+            <option value="natacion">Natación</option>
+            </select>
+        </div>
+      </section>
+      <section class="principal">
+        <h2>Actividades</h2>
+        <div class="resultados">
+          <table>
+            <tr>
+              <th>Deporte</th>
+              <th>Data</th>
+              <th>Título</th>
+              <th>Tempo</th>
+              <th>Distancia</th>
+              <th>Desnivel</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr class="odd">
+              <td>Carreira</td>
+              <td>mar.,08/03/2022</td>
+              <td><a href="">Rodaxe pola manha</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a href="">Editar</a></td>
+              <td><a href="">Eliminar</a></td>
+            </tr>
+            <tr>
+              <td>Carreira</td>
+              <td>mar.,07/03/2022</td>
+              <td><a href="">Rodaxe pola tarde</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a href="">Editar</a></td>
+              <td><a href="">Eliminar</a></td>
+            </tr>
+
+          </table>
+        </div>
+      </section>
+    </main>
 
   </body>
 </html>
