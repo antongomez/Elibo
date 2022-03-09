@@ -5,10 +5,11 @@
 }
 
 * {
+  --cor-fondo: #EEEEEE;
+
   --cor-laranxa-principal: #FF8A00;
   --cor-laranxa-hover: #f08200;
   --cor-laranxa-bordes-focus: #ffb863;
-
 
   --cor-bordes-input: #b3b3b3;
 }
@@ -50,7 +51,7 @@
 }
 
 body {
-  background-color: #EEEEEE;
+  background-color: var(--cor-fondo);
   font-family: Helvetica Now, Helvetica;
   padding: 110px 162px 0; /*Arriba | Esquerda e Dereita | Abaixo*/
   font-size: 15px;
@@ -101,11 +102,11 @@ p {
 /* Linhas de separacion */
 
 .vlinha {
-  border-left: thin solid #EEEEEE;
+  border-left: thin solid var(--cor-fondo);
   height:100%;
 }
 
 .hlinha {
-  border-top: thin solid #EEEEEE;
+  border-top: thin solid var(--cor-fondo);
   width:100%;
 }
