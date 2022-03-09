@@ -44,3 +44,44 @@ body{
   grid-template-rows: 10% 30% 20% 10% 30%;
 
 }
+
+.container__dcho div{
+  border: thin solid #EEEEEE;
+}
+
+.celda_titulo{
+  grid-column: 1 / 4;
+}
+
+.celda_info_principal{
+
+}
+
+.celda_descripcion{
+
+
+}
+
+.celda_grupo_actividade{
+
+}
+
+.celda_distancia{
+
+
+}
+
+.celda_tempo{
+
+
+}
+
+.celda_ritmo{
+
+
+}
+
+.celda_equipamento{
+
+
+}
