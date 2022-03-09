@@ -6,6 +6,8 @@
 
 * {
   --cor-fondo: #EEEEEE;
+  --cor-texto: black;
+  --cor-enlaces: #1d75e0;
 
   --cor-laranxa-principal: #FF8A00;
   --cor-laranxa-hover: #f08200;
