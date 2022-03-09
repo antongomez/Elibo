@@ -81,3 +81,8 @@
   /*Sobreescribimos la actividad para fijar su tamaño*/
   max-width: 400;
 }
+
+.actividade a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}
