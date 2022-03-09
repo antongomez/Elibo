@@ -79,17 +79,23 @@ main, section, table {
   width: 100%;
 }
 
+table {
+  border-width: 0;
+  border-color: var(--cor-fondo);
+  border-collapse: collapse;
+}
+
 th, td {
-  border-width: 1 0 1 0;
+  border-width: 1 0;
   border-style: solid;
-  border-color: black;
+  border-color: var(--cor-fondo);
   border-collapse: collapse;
 
   padding: 5;
   text-align: left;
 
   font-size: 100%;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 table .odd {
