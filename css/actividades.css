@@ -79,7 +79,7 @@ main, section, table {
   width: 100%;
 }
 
-th, td {
+th, td, table {
   border-width: 1 0 1 0;
   border-style: solid;
   border-color: black;
