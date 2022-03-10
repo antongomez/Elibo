@@ -9,54 +9,51 @@
 
   <body>
     <header class="header">
-      <nav class="nav">
-        <ul class="lista lista-flex" id="nav-lista-esquerda">
-          <li>
-            <div class = "contenedor_imaxe">
-              <img id="logo" src="imaxes\Logos\logo_elibo.svg">
-            </div>
-          </li>
+      <nav>
+        <ul class="lista lista-flex">
+          <a href="principal.html"
+            <li class="contenedor_imaxe">
+              <img class="logo" src="imaxes\Logos\logo_elibo.svg">
+            </li>
+          </a>
           <li>
             <ul class="lista lista-flex">
-              <li class="nav-item nav-item-menu">
-                <a href="actividades.html" class="nav-enlace nav-item-menu-link">Actividades</a>
+              <li class="elemento-menu">
+                <a href="actividades.html" class="nav-enlace">Actividades</a>
               </li>
-              <li class="nav-item nav-item-menu">
-                <a href="deportistas.html" class="nav-enlace nav-item-menu-link">Deportistas</a>
+              <li class="elemento-menu">
+                <a href="deportistas.html" class="nav-enlace">Deportistas</a>
               </li>
-              <li class="nav-item nav-item-menu">
-                <a href="html_Info\novidades.html" class="nav-enlace nav-item-menu-link">Novidades</a>
+              <li class="elemento-menu">
+                <a href="html_Info\novidades.html" class="nav-enlace">Novidades</a>
               </li>
-              <li class="nav-item nav-item-menu">
-                <a href="html_Info\sobre_nos.html" class="nav-enlace nav-item-menu-link">Sobre Nós</a>
+              <li class="elemento-menu">
+                <a href="html_Info\sobre_nos.html" class="nav-enlace">Sobre Nós</a>
               </li>
             </ul>
           </li>
         </ul>
 
-        <ul class="lista lista-flex" id="nav-lista-dereita">
-          <li id="desplegable">
-            <div class="contenedor_imaxe" id="fotos">
-              <button class="button">
-                <img class="fotoPerfil-nav" src="imaxes\deportistas\antongomezlopez\perfil\perfil_anton.jpg">
-                <!-- Arrow -->
-                <div class="button__arrow button__arrow--down"></div>
-              </button>
-            </div>
-            <ul class="lista" id="menu-desplegable">
+        <ul class="lista lista-flex">
+          <li class="desplegable">
+            <figure class="contenedor-foto-perfil">
+              <img class="fotoPerfil-nav" src="imaxes\deportistas\antongomezlopez\perfil\perfil_anton.jpg">
+              <div class="frecha-descendente"></div>
+            </figure>
+            <ul class="lista menu-desplegable">
               <!-- principio menu desplegable -->
-             <li class="desplegable-item"><a class="nav-enlace" href="perfil.html">Perfil</a></li>
-             <li class="desplegable-item"><a class="nav-enlace" href="equipamento.html">Equipamento</a></li>
-             <li class="desplegable-item"><a class="nav-enlace" href="index.html">Pechar sesión</a></li>
+             <a class="nav-enlace" href="perfil.html"><li class="desplegable-item">Perfil</li></a>
+             <a class="nav-enlace" href="equipamento.html"><li class="desplegable-item">Equipamento</li></a>
+             <a class="nav-enlace" href="index.html"><li class="desplegable-item">Pechar sesión</li></a>
             </ul>
             <!-- final menu desplegable -->
           </li>
           <li>
             <div class="contenedor_imaxe">
-              <div id="contenedor2_fotoMais">
-                <img class="fotoMais" id="fotoMais_cheo" src="imaxes\Logos\LogoMais.svg">
-                <img class="fotoMais" id="fotoMais_baleiro" src="imaxes\Logos\LogoMais_baleiro.svg">
-              </div>
+              <figure class="contenedor_fotoMais">
+                <img class="fotoMais fotoMais_cheo" src="imaxes\Logos\LogoMais.svg">
+                <img class="fotoMais fotoMais_baleiro" src="imaxes\Logos\LogoMais_baleiro.svg">
+              </figure>
             </div>
           </li>
         </ul>
