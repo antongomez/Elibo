@@ -9,36 +9,25 @@
   position: fixed;  /*A barra de navegacion quedara sempre arriba fixada cando facemos scroll*/
   top: 0;           /*Alineacion da barra de navegacion fixa arriba a esquerda*/
   left: 0;
-  z-index: 100;
+  z-index: 10;
 }
 
-.nav {
+nav {
   display: flex;                  /*Para distribuir os elementos do nav*/
   justify-content: space-between; /*Para espaciar os elementos*/
+  margin: 0 162;
 }
 
-#nav-lista-esquerda{
-  margin-left: 162px; /*Marxe a dereita*/
-   /*Axustar as marxes con respecto a distribucion en 12 columnas*/
-}
-
-#nav-lista-dereita{
-  margin-right: 162px; /*Marxe a dereita*/
-}
-
-.contenedor_imaxe{
-  width: 142px;
-  height: 60px;
+.contenedor_imaxe {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+
+  width: 142px;
+  height: 60px;
 }
 
 /*    Elementos das listas e enlaces. Xeral   */
-
-.nav-item {
-  font-style: normal;
-}
 
 /* Clase dos enlaces do menu */
 .nav-enlace {
@@ -46,21 +35,20 @@
   text-decoration: none;
 }
 
-
 /*    Enlaces da parte esquerda   */
 
-.nav-item-menu {
+nav .elemento-menu {
   margin: 0 6px;      /*Arriba e abaixo | Esquerda e Dereita*/
   line-height: 60px;  /*Usamolo para centrar os items do menu*/
   width: max-content; /*Para evitar que ao redimensionar a pantalla corte a palabra "Sobre nos"*/
 }
 
 /* Para conseguir o subliñado cando se pasa por riba */
-.nav-item-menu-link {
+nav .elemento-menu a {
   padding: 0 5 20 5;
 }
 
-.nav-item-menu-link:hover {
+nav .elemento-menu a:hover {
   /*transition: .3s; Aplica un retardo*/
   border-width: 0 0 3 0;  /*Para "subliñar" cando pasamos por riba*/
   border-style: solid;
@@ -71,86 +59,55 @@
 
 .fotoPerfil-nav{
   height: 50px;
-  width: auto;
   border-radius: 50%;
 
   /* Espaciado respecto do boton cara abaixo */
   margin-right: 10px;
 }
 
-.button {
-  /* Center the content */
+.contenedor-foto-perfil {
   align-items: center;
   display: flex;
   justify-content: center;
 
-  /* Spacing */
   padding: 5px;
 
   /* Sen borde e cor de fondo */
   border: 0;
   background-color: white;
+
+  width: 142px;
+  height: 60px;
 }
 
-.button__arrow {
-  /* Transparent background */
+.frecha-descendente {
   background-color: transparent;
 
-  /* Size */
   height: 12px;
   width: 12px;
-}
 
-.button__arrow--down {
-    /* Edges */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-    transform: translateY(-25%) rotate(45deg);
-}
-
-.fotoMais{
-  height: 40px;
-  transition: opacity 0.2s ease-in-out;
-}
-
-#contenedor2_fotoMais{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-#fotoMais_baleiro {
-  float: left;
-  position: relative;
-  top: -40px;
-  z-index: 2;
-}
-
-#fotoMais_cheo{
-    float: left;
-    z-index: 1;
-}
-
-#fotoMais_baleiro:hover {
-  opacity: 0;
+  /* Edges */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  transform: translateY(-25%) rotate(45deg);
 }
 
 /*  Menu desplegable  */
-#desplegable {
-  width: 120px;
+.desplegable {
+  width: 120;
 }
 
-#desplegable:hover > ul {
-  display:block;
+.desplegable:hover ul {
+  display: block;
 }
 
-#menu-desplegable {
+.menu-desplegable {
   display: none;
   background: white;
   list-style: none;
   float: none;
   width: 120px;
-  padding: 0;/*Cambiar*/
+  padding: 0;
 }
 
 .desplegable-item {
@@ -166,6 +123,35 @@
   background: #C0C0C0;
 }
 
-#logo{
+.logo{
   width: 125px;
+}
+
+/* Boton mais dereita */
+
+.fotoMais{
+  height: 40px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.contenedor_fotoMais{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.fotoMais_baleiro {
+  float: left;
+  position: relative;
+  top: -40px;
+  z-index: 2;
+}
+
+.fotoMais_cheo{
+  float: left;
+  z-index: 1;
+}
+
+.fotoMais_baleiro:hover {
+  opacity: 0;
 }
