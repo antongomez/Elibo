@@ -9,7 +9,7 @@
   position: fixed;  /*A barra de navegacion quedara sempre arriba fixada cando facemos scroll*/
   top: 0;           /*Alineacion da barra de navegacion fixa arriba a esquerda*/
   left: 0;
-  z-index: 1;
+  z-index: 100;
 }
 
 .nav {
@@ -116,6 +116,7 @@
 #contenedor2_fotoMais{
   width: 40px;
   height: 40px;
+  border-radius: 50%;
 }
 
 #fotoMais_baleiro {
