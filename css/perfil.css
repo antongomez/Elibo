@@ -50,6 +50,11 @@
   margin: 2px auto auto 40px;
 }
 
+.container__bio li{
+  font-size: 85%;
+  font-weight: 200;
+}
+
 .elemento_centrado{
   display: flex;
   align-items: center;

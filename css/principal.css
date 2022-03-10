@@ -9,27 +9,28 @@
 }
 
 .container__main {
-  /* Take the remaining height */
-  flex-grow: 1;
 
   /* Layout the left sidebar, main content and right sidebar */
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .container__left {
+  order: 1;
   width: 290;
   min-width: 290;
-  /*height: fit-content;*/
-  height: 243;
+  height: fit-content;
+
   background-color: white;
   padding: 10;
   border-radius: 8px;
+
+  margin-bottom: 20px;
 }
 
 .container__middle {
-  /* Take the remaining width */
-  flex-grow: 1;
+  order: 2;
   margin: 0 20 0 20;
 }
 
@@ -37,7 +38,7 @@
 
 .div-float {
   position: relative;
-  top: -40;
+  margin-top: -40;
 }
 .container__left figure {
   display: flex;
@@ -71,9 +72,60 @@
 }
 
 .container__left .barraInferior {
-  padding: 20 0 0 0;
+  padding: 20 0;
 }
 
 .container__left .nav-enlace:hover {
   text-decoration: underline;
+}
+
+.container__right{
+  order: 3;
+}
+
+@media only screen and (max-width: 1060px) {
+  /* Para tablet */
+  .container__main{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__left{
+
+  }
+
+  .container__right{
+    order: 2;
+    margin-bottom: 20px;
+  }
+
+  .container__middle{
+    order: 3;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  /* Para movil */
+  .container__main{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__left{
+    width: 400px;
+  }
+
+  .container__right{
+    width: 400px;
+    order: 2;
+    margin-bottom: 20px;
+  }
+
+  .container__middle{
+    order: 3;
+  }
+
+
 }
