@@ -1,8 +1,12 @@
 @import "comuns/barraNavegacion.css";
 
 main {
-  padding-left: 142px;
-  padding-right: 142px;
+  margin-left: 112px;
+  margin-right: 112px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  height: 700;
 }
 
 main h1 {
@@ -26,13 +30,27 @@ main p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 250px;
+  width: 250px;
 }
 
 .trabajador h2 {
+  display: none;
   font-weight: 200;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.trabajador p {
+  display: none;
+  text-align: center;
+}
+
+.trabajador:hover h2{
+  display: block;
+}
+
+.trabajador:hover p{
+  display: block;
 }
 
 .fotoTrabajador {
