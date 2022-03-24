@@ -55,7 +55,7 @@ button:hover {
   cursor: hand;
 }
 
-input[type=text]{
+input {
   font-size: 22px;
   padding: 18px;
   width: 324px;
@@ -67,12 +67,12 @@ input[type=text]{
   border-style: solid;
 }
 
-input[type=text]:hover {
+input:hover {
   border-radius: 12px;
   border-color: #FF8A00;
 }
 
-input[type=text]:focus {
+input:focus {
   border-width: 3;
 }
 
