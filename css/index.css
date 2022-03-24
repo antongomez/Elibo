@@ -26,7 +26,7 @@ body{
 .titulo{
   color: #FF8A00;
   font-size:125px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .eslogan {
@@ -78,7 +78,7 @@ input:focus {
 
 .boton_acceder{
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 18px;
   color:  white;
   background-color: var(--cor-laranxa-principal);
@@ -108,7 +108,7 @@ input:focus {
 
 .boton_crear{
    font-size: 22px;
-   font-weight: 700;
+   font-weight: 600;
    padding: 18px;
    color:  white;
    background-color: #2E94AB;
