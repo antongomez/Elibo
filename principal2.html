@@ -1,0 +1,141 @@
+<!DOCTYPE>
+<html lang="es">
+<html>
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Páxina Principal</title>
+  <link rel="stylesheet" href="css\principal.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <ul class="lista lista-flex">
+        <a href="principal.html"
+          <li class="contenedor_imaxe">
+            <img class="logo" src="imaxes\Logos\logo_elibo.svg">
+          </li>
+        </a>
+        <li>
+          <ul class="lista lista-flex">
+            <li class="elemento-menu">
+              <a href="actividades.html" class="nav-enlace">Actividades</a>
+            </li>
+            <li class="elemento-menu">
+              <a href="deportistas.html" class="nav-enlace">Deportistas</a>
+            </li>
+            <li class="elemento-menu">
+              <a href="html_Info\novidades.html" class="nav-enlace">Novidades</a>
+            </li>
+            <li class="elemento-menu">
+              <a href="html_Info\sobre_nos.html" class="nav-enlace">Sobre Nós</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="lista lista-flex">
+        <li class="desplegable">
+          <figure class="contenedor-foto-perfil">
+            <img class="fotoPerfil-nav" src="imaxes\deportistas\antongomezlopez\perfil\perfil_anton.jpg">
+            <div class="frecha-descendente"></div>
+          </figure>
+          <ul class="lista menu-desplegable">
+            <!-- principio menu desplegable -->
+           <a class="nav-enlace" href="perfil.html"><li class="desplegable-item">Perfil</li></a>
+           <a class="nav-enlace" href="equipamento.html"><li class="desplegable-item">Equipamento</li></a>
+           <a class="nav-enlace" href="index.html"><li class="desplegable-item">Pechar sesión</li></a>
+          </ul>
+          <!-- final menu desplegable -->
+        </li>
+        <li>
+          <div class="contenedor_imaxe">
+            <figure class="contenedor_fotoMais">
+              <img class="fotoMais fotoMais_cheo" src="imaxes\Logos\LogoMais.svg">
+              <img class="fotoMais fotoMais_baleiro" src="imaxes\Logos\LogoMais_baleiro.svg">
+            </figure>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container__main">
+    <aside class="container__left">
+      <div class="div-float">
+        <figure class="div-center">
+          <img class="fotoPerfil" src="imaxes\deportistas\antongomezlopez\perfil\perfil_anton.jpg">
+          <h1><a href="perfil.html" class="nav-enlace">Antón Gómez López</a></h1>
+        </figure>
+
+        <ul class="lista lista-flex barraCentral">
+          <li>
+            <div class="elemento-lista">
+              <p>Actividades</p>
+              <h2>100</h2>
+            </div>
+          </li>
+          <li>
+            <div class="vlinha"></div>
+          </li>
+          <li>
+            <div class="elemento-lista">
+              <p>Seguidores</p>
+              <h2>10</h2>
+            </div>
+          </li>
+          <li>
+            <div class="vlinha"></div>
+          </li>
+          <li>
+            <div class="elemento-lista">
+              <p>Seguidos</p>
+              <h2>10</h2>
+            </div>
+          </li>
+        </ul>
+
+        <div class="hlinha"></div>
+
+        <ul class="lista barraInferior">
+          <li>Última actividade</li>
+          <li><a class="nav-enlace" href="actividade.html"><strong>Rodaxe á mañá</strong> • Onte</a></li>
+        </ul>
+      <div>
+    </aside>
+
+    <section class="container__middle">
+
+      <button id = "boton">Cargar</button>
+
+    </section>
+
+    <aside class="estatisticas container__right">
+      <table>
+        <caption>As miñas estatísticas</caption>
+
+        <tr><th class="celaBotons">
+          <figure>
+            <img src="imaxes\Logos\logo_ciclismo.svg">
+            <img src="imaxes\Logos\logo_correr.svg">
+            <img src="imaxes\Logos\logo_natacion.svg">
+          </figure>
+        </th></tr>
+        <tr><th>Este mes</th><th></th></tr>
+        <tr class="odd"><td>Distancia</td><td class="dato">43,1 km</td></tr>
+        <tr><td>Tempo</td><td class="dato">3h 23min</td></tr>
+        <tr class="odd"><td>Carreiras</td><td class="dato">8</td></tr>
+        <tr><th>Este ano</th><th></th></tr>
+        <tr class="odd"><td>Distancia</td><td class="dato">245 km</td></tr>
+        <tr><td>Tempo</td><td class="dato">17h 30min</td></tr>
+        <tr class="odd"><td>Carreiras</td><td class="dato">50</td></tr>
+
+      </table>
+    </aside>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src=principal2.js></script>
+
+  </body>
+</html>
