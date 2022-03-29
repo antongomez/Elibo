@@ -1,13 +1,72 @@
-<ACTIVIDADE>
-  <FOTOPERFIL>imaxes\deportistas\franciscogomezsueiras\perfil\perfil_francisco.jpg</FOTOPERFIL>
-  <USUARIO>Francisco Gómez Sueiras</USUARIO>
-  <DATA>29/03/2022</DATA>
-  <HORA>14:03</HORA>
-  <LOCALIZACION>Santiago de Compostela</LOCALIZACION>
-  <TIPOACTIVIDADE>correr</TIPOACTIVIDADE>
-  <TITULO>correr</TITULO>
-  <DISTANCIA>10,89 km</DISTANCIA>
-  <VELOCIDADE>4:43 /km</VELOCIDADE>
-  <TEMPO>51 23 s</TEMPO>
-  <ELIS>3</ELIS>
-</ACTIVIDADE>
+<ACTIVIDADES>
+  <ACTIVIDADE>
+    <FOTOPERFIL>imaxes\deportistas\franciscogomezsueiras\perfil\perfil_francisco.jpg</FOTOPERFIL>
+    <USUARIO>Francisco Gómez Sueiras</USUARIO>
+    <DATA>29/03/2022</DATA>
+    <HORA>14:03</HORA>
+    <LOCALIZACION>Santiago de Compostela</LOCALIZACION>
+    <TIPOACTIVIDADE>correr</TIPOACTIVIDADE>
+    <TITULO>Adestramento de mañá</TITULO>
+    <DISTANCIA>10,89 km</DISTANCIA>
+    <VELOCIDADE>4:43 /km</VELOCIDADE>
+    <TEMPO>51min 23s</TEMPO>
+    <ELIS>3</ELIS>
+  </ACTIVIDADE>
+
+  <ACTIVIDADE>
+    <FOTOPERFIL>imaxes\deportistas\manueltimiraoslopez\perfil\perfil_manuel.jpg</FOTOPERFIL>
+    <USUARIO>Manuel Timiraos López</USUARIO>
+    <DATA>29/03/2022</DATA>
+    <HORA>11:00</HORA>
+    <LOCALIZACION>O Burgo</LOCALIZACION>
+    <TIPOACTIVIDADE>correr</TIPOACTIVIDADE>
+    <TITULO>Rodaxe suave</TITULO>
+    <DISTANCIA>10,00 km</DISTANCIA>
+    <VELOCIDADE>5:00 /km</VELOCIDADE>
+    <TEMPO>50min 00s</TEMPO>
+    <ELIS>3</ELIS>
+  </ACTIVIDADE>
+
+  <ACTIVIDADE>
+    <FOTOPERFIL>imaxes\deportistas\franciscogomezsueiras\perfil\perfil_francisco.jpg</FOTOPERFIL>
+    <USUARIO>Francisco Gómez Sueiras</USUARIO>
+    <DATA>28/03/2022</DATA>
+    <HORA>09:21</HORA>
+    <LOCALIZACION>Santiago de Compostela</LOCALIZACION>
+    <TIPOACTIVIDADE>correr</TIPOACTIVIDADE>
+    <TITULO>Rodaxe controlada</TITULO>
+    <DISTANCIA>17,23 km</DISTANCIA>
+    <VELOCIDADE>4:20 /km</VELOCIDADE>
+    <TEMPO>1h 14min 39s</TEMPO>
+    <ELIS>3</ELIS>
+  </ACTIVIDADE>
+
+  <ACTIVIDADE>
+    <FOTOPERFIL>imaxes\deportistas\manueltimiraoslopez\perfil\perfil_manuel.jpg</FOTOPERFIL>
+    <USUARIO>Manuel Timiraos López</USUARIO>
+    <DATA>07/03/2022</DATA>
+    <HORA>13:56</HORA>
+    <LOCALIZACION>O Burgo</LOCALIZACION>
+    <TIPOACTIVIDADE>correr</TIPOACTIVIDADE>
+    <TITULO>Adestramento ao mediodía</TITULO>
+    <DISTANCIA>5,00 km</DISTANCIA>
+    <VELOCIDADE>5:00 /km</VELOCIDADE>
+    <TEMPO>25min 01s</TEMPO>
+    <ELIS>2</ELIS>
+  </ACTIVIDADE>
+
+  <ACTIVIDADE>
+    <FOTOPERFIL>imaxes\deportistas\franciscogomezsueiras\perfil\perfil_francisco.jpg</FOTOPERFIL>
+    <USUARIO>Francisco Gómez Sueiras</USUARIO>
+    <DATA>05/03/2022</DATA>
+    <HORA>19:33</HORA>
+    <LOCALIZACION>Santiago de Compostela</LOCALIZACION>
+    <TIPOACTIVIDADE>correr</TIPOACTIVIDADE>
+    <TITULO>Test 10k</TITULO>
+    <DISTANCIA>10,00 km</DISTANCIA>
+    <VELOCIDADE>4:00 /km</VELOCIDADE>
+    <TEMPO>40min 00s</TEMPO>
+    <ELIS>15</ELIS>
+  </ACTIVIDADE>
+
+</ACTIVIDADES>

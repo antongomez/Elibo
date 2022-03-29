@@ -6,5 +6,4 @@ function acceder() {
   } else {
     window.location.replace("principal2.html");
   }
-
 }
