@@ -70,8 +70,8 @@
     <h1 class="nombre_perfil">Antón Gómez López</h1>
 
 
-    <section class="container__bio">
-      <div style="grid-row: 1 / 3;">
+    <section id="container__bio">
+      <div style="grid-row: 1 / 3;" name="elemento_bio">
         <p style="margin: 10px auto auto 10px;">Biografía</p>
         <p style="margin: 10px auto auto 10px;">Atleta do Club Atletismo a Santiago. Marcas persoais:</p>
         <ul style="margin-bottom: 20px;">
@@ -80,14 +80,32 @@
           <li>3000: 9’21”</li>
         </ul>
       </div>
-      <div class="elemento_centrado">
-        <p>Xénero: <strong>Masculino</strong></p>
+      <div class="elemento_centrado" name="elemento_bio">
+        <p>Xénero: </p>
+        <input type="text" value="Masculino" id="campo_xenero" class="campo_perfil" disabled>
+        <button id="lapiz_xenero" class="boton_lapiz">
+          <figure>
+            <img src="Imaxes\Logos\LogoEditarElibo.svg" class="fotoLapiz">
+          </figure>
+        </button>
       </div>
-      <div class="elemento_centrado">
-        <p>Idade: <strong>21</strong></p>
+      <div class="elemento_centrado" name="elemento_bio">
+        <p>Idade: </p>
+        <input type="text" value="21" id="campo_idade" class="campo_perfil" disabled>
+        <button id="lapiz_idade" class="boton_lapiz">
+          <figure>
+            <img src="Imaxes\Logos\LogoEditarElibo.svg" class="fotoLapiz">
+          </figure>
+        </button>
       </div>
-      <div class="elemento_centrado" style="grid-column: 2 / 4;">
-        <p>Ubicación: <strong>Santiago de Compostela</strong></p>
+      <div class="elemento_centrado" style="grid-column: 2 / 4;" name="elemento_bio">
+        <p>Ubicación: </p>
+        <input type="text" value="Santiago de Compostela" id="campo_ubicacion" class="campo_perfil" disabled>
+        <button id="lapiz_ubicacion" class="boton_lapiz">
+          <figure>
+            <img src="Imaxes\Logos\LogoEditarElibo.svg" class="fotoLapiz">
+          </figure>
+        </button>
       </div>
     </section>
 
@@ -232,6 +250,7 @@
 
 
 
+    <script src=perfil.js></script>
 
   </body>
 </html>
