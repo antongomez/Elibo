@@ -1,0 +1,26 @@
+{
+  "Actividades":[
+    {
+      "Data": "29/03/2022",
+      "Hora": "12:00",
+      "Localizacion": "Santiago de Compostela",
+      "TipoActividade": "carreira",
+      "Titulo": "Adestramento de mañá",
+      "Distancia": "10,00 km",
+      "Velocidade": "4:00 /km",
+      "Tempo": "40min 00s",
+      "Elis": "3"
+    },
+    {
+      "Data": "28/03/2022",
+      "Hora": "18:00",
+      "Localizacion": "A Coruña",
+      "TipoActividade": "carreira",
+      "Titulo": "Adestramento pola tarde",
+      "Distancia": "20,00 km",
+      "Velocidade": "4:30 /km",
+      "Tempo": "1h 30min 00s",
+      "Elis": "5"
+    }
+  ]
+}
