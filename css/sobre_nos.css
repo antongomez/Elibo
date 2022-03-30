@@ -1,12 +1,14 @@
 @import "comuns/barraNavegacion.css";
 
 main {
-  margin-left: 112px;
-  margin-right: 112px;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 30px;
   background-color: white;
   border-radius: 8px;
   height: 700;
+  width: 80%;
+  min-width: 600px;
 }
 
 main h1 {

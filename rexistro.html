@@ -10,13 +10,20 @@
   <header class="header">
     <nav>
       <ul class="lista lista-flex">
-        <a href="principal.html"
+        <div class="btn_menu_desplegable">
+          <div id= "boton_hamburguesa" class="boton_hamburguesa" onclick="animacion(this)">
+            <div class="linea-1"></div>
+            <div class="linea-2"></div>
+            <div class="linea-3"></div>
+          </div>
+        </div>
+        <a href="principal.html" class="no_outline">
           <li class="contenedor_imaxe">
             <img class="logo" src="imaxes\Logos\logo_elibo.svg">
           </li>
         </a>
         <li>
-          <ul class="lista lista-flex">
+          <ul class="lista lista-flex lista_enlaces lista_enlaces_visible">
             <li class="elemento-menu">
               <a href="html_Info\novidades.html" class="nav-enlace">Novidades</a>
             </li>
@@ -32,6 +39,6 @@
   <main>
 
   </main>
-
+  <script src="javascript/hamburguesa.js"></script>
 </body>
 </html>

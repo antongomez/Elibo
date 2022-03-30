@@ -10,13 +10,20 @@
   <header class="header">
     <nav>
       <ul class="lista lista-flex">
-        <a href="principal.html"
+        <div class="btn_menu_desplegable">
+          <div id= "boton_hamburguesa" class="boton_hamburguesa" onclick="animacion(this)">
+            <div class="linea-1"></div>
+            <div class="linea-2"></div>
+            <div class="linea-3"></div>
+          </div>
+        </div>
+        <a href="principal.html" class="no_outline">
           <li class="contenedor_imaxe">
             <img class="logo" src="imaxes\Logos\logo_elibo.svg">
           </li>
         </a>
         <li>
-          <ul class="lista lista-flex">
+          <ul class="lista lista-flex lista_enlaces lista_enlaces_visible">
             <li class="elemento-menu">
               <a href="html_Info\novidades.html" class="nav-enlace">Novidades</a>
             </li>
@@ -27,6 +34,28 @@
         </li>
       </ul>
 
+      <ul class="lista lista-flex">
+        <li class="desplegable ocultar">
+          <figure class="contenedor-foto-perfil">
+            <img class="fotoPerfil-nav" src="imaxes\deportistas\antongomezlopez\perfil\perfil_anton.jpg">
+            <div class="frecha-descendente"></div>
+          </figure>
+          <ul class="lista menu-desplegable">
+            <!-- principio menu desplegable -->
+           <a class="nav-enlace" href="perfil.html"><li class="desplegable-item">Perfil</li></a>
+           <a class="nav-enlace" href="index.html"><li class="desplegable-item">Pechar sesión</li></a>
+          </ul>
+          <!-- final menu desplegable -->
+        </li>
+        <li class="ocultar">
+          <a class="contenedor_imaxe no_outline" href="crear_actividade.html">
+            <figure class="contenedor_fotoMais">
+              <img class="fotoMais fotoMais_cheo" src="imaxes\Logos\LogoMais.svg">
+              <img class="fotoMais fotoMais_baleiro" src="imaxes\Logos\LogoMais_baleiro.svg">
+            </figure>
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="container__main">
@@ -46,5 +75,6 @@
   </main>
 
   <script src=javaScript/index.js></script>
+  <script src="javascript/hamburguesa.js"></script>
   </body>
 </html>

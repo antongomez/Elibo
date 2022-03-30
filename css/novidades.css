@@ -1,8 +1,10 @@
 @import "comuns/barraNavegacion.css";
 
 main {
-  padding-left: 142px;
-  padding-right: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main header {
@@ -14,6 +16,7 @@ main h1{
 }
 
 main header h2 {
+  width: 600;
   text-align: center;
 }
 
@@ -26,6 +29,7 @@ main h6 {
 }
 
 main article {
+  width: 600;
   background-color: white;
   padding: 10;
   border-radius: 8px;
@@ -34,8 +38,7 @@ main article {
 }
 
 .linea_negra{
+  width: 600;
   border-top: 2px solid black;
-  width: 100%;
-  margin: 40 auto 40 auto  ;
-  display: block;
+  margin: 40 0 40 0  ;
 }
