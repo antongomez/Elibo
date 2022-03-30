@@ -10,10 +10,11 @@ body{
   height: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 7%;
+  margin-top: 90px;
 }
 
 .container__izq{
+  min-width: 100;
   width: 12%;
   height: 210px;
   margin-right: 20px;
@@ -21,6 +22,7 @@ body{
   flex-direction: column;
   justify-content: flex-start;
 }
+
 
 .opcion_actividad{
   background-color: white;
@@ -34,6 +36,7 @@ body{
 }
 
 .container__dcho{
+  min-width: 500;
   width: 68%;
   height: 450px;
   background-color: white;
