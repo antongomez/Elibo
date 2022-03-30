@@ -20,8 +20,6 @@ main p {
   font-size: 15;
 }
 
-
-
 .container__trabajadores {
   display: flex;
   flex-direction: row;
