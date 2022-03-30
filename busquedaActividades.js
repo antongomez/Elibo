@@ -9,6 +9,12 @@ function buscar(){
     });
 
     var taboa = '';
+    if(actividadesFiltradas.length > 0){
+      $(numActividades).html(actividadesFiltradas.length + ' Actividades');
+    }else {
+      $(numActividades).html('Non hai actividades');
+    }
+
     $(actividadesFiltradas).each(function(){
       taboa += '<tr> <td>' + this.TipoActividade + '</td> <td>' + this.Data + '</td>'
             + '<td><a href="' + this.Enlace + '">' + this.Titulo + '</a> </td>'
@@ -25,8 +31,9 @@ function buscar(){
 
 $(document).ready(function(){
   $("#boton_buscar").on('click', buscar);
-  $("#txt_tipo").val("todo");
+  $('#txt_tipo').on('change', buscar);
   $("#txt_buscador").val("");
+  $("#txt_tipo").val("todo");
   buscar();
 });
 
