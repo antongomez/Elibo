@@ -9,7 +9,8 @@
       "Distancia": "10,00 km",
       "Velocidade": "4:00 /km",
       "Tempo": "40min 00s",
-      "Elis": "3"
+      "Elis": "3",
+      "Enlace": "html_Actividades/antongomezlopez/actividade_anton_1.html"
     },
     {
       "Data": "28/03/2022",
@@ -18,9 +19,23 @@
       "TipoActividade": "ciclismo",
       "Titulo": "Adestramento pola tarde",
       "Distancia": "20,00 km",
-      "Velocidade": "4:30 /km",
-      "Tempo": "1h 30min 00s",
-      "Elis": "5"
+      "Velocidade": "20 km/h",
+      "Tempo": "1h 00min 00s",
+      "Elis": "5",
+      "Enlace": "html_Actividades/antongomezlopez/actividade_anton_1.html"
+    },
+    {
+      "Data": "27/03/2022",
+      "Hora": "20:00",
+      "Localizacion": "A Coruña",
+      "TipoActividade": "natacion",
+      "Titulo": "Adestramento de natación pola tarde",
+      "Distancia": "1.758 m",
+      "Velocidade": "1:24 /100 m",
+      "Tempo": "24min 51s",
+      "Elis": "5",
+      "Enlace": "html_Actividades/antongomezlopez/actividade_anton_1.html"
     }
+
   ]
 }
