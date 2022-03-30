@@ -8,17 +8,27 @@
 // jQuery ou javascript 6
 
 
-/*function crearActividad(){
-
-  $(".elemento_formulario input").each(function(){
-    console.log($(this));
-  });
-
-}*/
 function comprobarCampos(){
-  var distancia = $("#campo_distancia")
-  $("#mensaje_error").removeClass("texto_oculto");
-  $(document).scrollTop("0");
+  var error = false;
+  $(".campo_obligatorio").each(function(){
+    var texto = $(this).val().trim();
+    $(this).removeClass("borde_rojo");
+    if (texto.length == 0){
+      error = true;
+      $(this).addClass("borde_rojo");
+    }
+  });
+  if (error == true){
+    $("#mensaje_error").removeClass("texto_oculto");
+    $(document).scrollTop("0");
+  }
+  else{
+    $("#mensaje_error").addClass("texto_oculto");
+    //Programar la creacion de la actividad
+
+
+  }
+
 
 }
 
