@@ -1,10 +1,9 @@
 
 var lista = document.getElementsByName("elemento_bio");
-
 var campo;
 var lapiz;
-for (var i=1; i < 4; i++){
-  campo = lista[i].getElementsByTagName("input")[0];
+for (var i=0; i < 4; i++){
+  //campo = lista[i].getElementsByTagName("input")[0];
   lapiz = lista[i].getElementsByTagName("button")[0];
   lapiz.addEventListener("click", bloq_desbloq);
   //campo.addEventListener("focusout", bloquear_campo);

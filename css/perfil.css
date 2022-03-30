@@ -58,9 +58,12 @@
 .biografia{
   padding: 10px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-content: space-around;
 }
+
+
 
 .biografia textarea{
   border-style: none;
