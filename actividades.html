@@ -64,10 +64,11 @@
       <section class="encabezado">
         <h1>As miñas actividades</h1>
         <div class="buscador">
-          <input type="search" placeholder="Rodaxe pola manha">
-          <button class="btn_buscar">Buscar</button>
-          <select required>
-            <option value="carreira" selected>Carreira</option>
+          <input id="txt_buscador" type="search" placeholder="Rodaxe pola manha">
+          <button id="boton_buscar" class="btn_buscar">Buscar</button>
+          <select required id="txt_tipo">
+            <option value="todo" selected>Todo</option>
+            <option value="carreira">Carreira</option>
             <option value="ciclismo">Ciclismo</option>
             <option value="natacion">Natación</option>
           </select>
@@ -116,6 +117,7 @@
         </div>
       </section>
     </main>
-
+  <script src="jquery-3.6.0.js"></script>
+  <script src="busquedaActividades.js"></script>
   </body>
 </html>
