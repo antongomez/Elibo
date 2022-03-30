@@ -63,19 +63,23 @@
   align-content: space-around;
 }
 
-
-
 .biografia textarea{
-  border-style: none;
   resize: none;
-  padding: 10px;
-  font-weight: bold;
+  padding: 2px;
+  margin: 8px;
+  font-weight: 400;
   font-size: 15;
   font-family: Helvetica Now, Helvetica;
+  outline: none;
+  border: 2px solid var(--cor-bordes-input);
+  border-radius: 5px;
 }
 
 .biografia textarea:disabled{
   background-color: white;
+  color: black;
+  font-weight: 300;
+  border-width: 0;
 }
 
 .biografia p{
@@ -121,20 +125,26 @@
 }
 
 .campo_perfil{
+  font-family: Helvetica Now, Helvetica;
   height: 20px;
   padding: 5px;
   margin-left: 10px;
-  border-width: thin;
-  border-radius: 3px;
-  font-weight: bold;
-  font-size: 15;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 15px;
   margin-right: 10px;
-  outline: inherit;
+  outline: none;
+  border: 2px solid var(--cor-bordes-input);
+  padding: 5px;
 }
 
 .campo_perfil:disabled{
+  color: black;
+  font-weight: 300;
   background-color: white;
-  border-style: none;
+  border-width: 0;
+  margin-top: 2px;
+  padding: 7px;
 }
 
 
