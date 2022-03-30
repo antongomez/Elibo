@@ -61,59 +61,68 @@
 
     <h1>Crear actividade</h1>
 
-    <section class="container__sup">
-      <div class="elemento_formulario">
-        <p>Distancia</p>
-        <input type="text">
-      </div>
-      <div class="elemento_formulario">
-        <p>Duración</p>
-        <input type="text">
-      </div>
-      <div class="elemento_formulario">
-        <p>Deporte</p>
-        <input type="text">
-      </div>
-      <div class="elemento_formulario">
-        <p>Material</p>
-        <input type="text">
-      </div>
-      <div class="elemento_formulario">
-        <p>Data</p>
-        <input type="text">
-      </div>
-      <div class="elemento_formulario">
-        <p>Hora</p>
-        <input type="text">
-      </div>
-      <div class="elemento_formulario">
-        <p>Ubicación</p>
-        <input type="text">
-      </div>
-    </section>
+    <form id="formulario">
 
-    <section class="container__inf">
-      <div class="elemento_formulario2">
-        <p>Título</p>
-        <input type="text">
-      </div>
-      <div class="elemento_formulario2">
-        <p>Descripción</p>
-        <textarea></textarea>
-      </div>
-    </section>
+      <section class="container__sup">
+        <p id="mensaje_error">*Campos obrigatorios sen cubrir</p>
+        <section class="flexbox">
+          <div class="elemento_formulario">
+            <p>Distancia*</p>
+            <input type="text" id="campo_distancia">
+          </div>
+          <div class="elemento_formulario">
+            <p>Duración*</p>
+            <input type="text">
+          </div>
+          <div class="elemento_formulario">
+            <p>Deporte*</p>
+            <input type="text">
+          </div>
+          <div class="elemento_formulario">
+            <p>Material</p>
+            <input type="text">
+          </div>
+          <div class="elemento_formulario">
+            <p>Data*</p>
+            <input type="text">
+          </div>
+          <div class="elemento_formulario">
+            <p>Hora*</p>
+            <input type="text">
+          </div>
+          <div class="elemento_formulario">
+            <p>Ubicación*</p>
+            <input type="text">
+          </div>
+        </section>
 
-    <section class="container__botones">
-      <div class="boton">
-        <a href="principal.html">
-          <input type="button" value="Crear" style="color:white; background-color:#FF8A00;">
-      </div>
-      <div class="boton">
-        <a href="principal.html">
-        <input type="button" value="Cancelar"; style="background-color: white">
-      </div>
+      </section>
 
-    </section>
+      <section class="container__inf">
+        <div class="elemento_formulario2">
+          <p>Título*</p>
+          <input type="text">
+        </div>
+        <div class="elemento_formulario2">
+          <p>Descripción</p>
+          <textarea></textarea>
+        </div>
+      </section>
+
+      <section class="container__botones">
+        <div class="boton">
+          <!--<a href="principal.html">-->
+            <input type="submit"  id="btn-crear" value="Crear" style="color:white; background-color:#FF8A00;">
+        </div>
+        <div class="boton">
+          <a href="principal.html">
+          <input type="button" value="Cancelar"; style="background-color: white">
+        </div>
+      </section>
+    </form>
+
+
+    <script src="jquery-3.6.0.js"></script>
     <script src="crear_actividade.js"></script>
   </body>
 </html>
