@@ -67,7 +67,7 @@ function cargarActividades(){
       document.getElementById("seccion_central").innerHTML = acts;
     }
   }
-  xhttp.open("GET", "baseDatosActividades.xml", true);
+  xhttp.open("GET", "baseDatos/baseDatosActividades.xml", true);
   xhttp.send();
 }
 

@@ -1,5 +1,5 @@
 function buscar(){
-  $.post('baseDatosActividadesAnton.json', function(datos){
+  $.post('baseDatos/baseDatosActividadesAnton.json', function(datos){
     var actividadesFiltradas = $(datos.Actividades).filter(function(idx) {
       if($("#txt_tipo").val() === "todo"){
         return datos.Actividades[idx].Titulo.includes($("#txt_buscador").val());
@@ -11,12 +11,21 @@ function buscar(){
     var taboa = '';
     if(actividadesFiltradas.length > 0){
       $(numActividades).html(actividadesFiltradas.length + ' Actividades');
+
     }else {
       $(numActividades).html('Non hai actividades');
     }
 
+    var impar = 0;
     $(actividadesFiltradas).each(function(){
-      taboa += '<tr> <td>' + this.TipoActividade + '</td> <td>' + this.Data + '</td>'
+      taboa += '<tr';
+      if(impar == 1){
+        taboa += ' class="odd"';
+        impar = 0;
+      }else {
+        impar = 1;
+      }
+      taboa += '> <td>' + this.TipoActividade + '</td> <td>' + this.Data + '</td>'
             + '<td><a href="' + this.Enlace + '">' + this.Titulo + '</a> </td>'
             + '<td>' + this.Tempo + '</td> <td>' + this.Distancia + '</td> <td></td>'
             + '<td><a href="">Editar</a></td> + <td><a href="">Eliminar</a></td> </tr>\n';
