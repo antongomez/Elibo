@@ -5,6 +5,12 @@ input, textarea{
   border-width: 1px;
 }
 
+#mensaje_error{
+  margin-bottom: 15px;
+  color: red;
+}
+
+
 .container__sup{
   width: 832;
   height: 272;
@@ -12,14 +18,19 @@ input, textarea{
   border-radius: 8px;
   margin-top: 20px;
   margin-bottom: 25px;
+
+  padding-top: 20px;
+  padding-left: 37;
+}
+
+.flexbox{
   display: flex;
   flex-wrap: wrap;
-  padding-top: 39px;
-  padding-left: 37;
 }
 
 .elemento_formulario{
   margin-right: 37px;
+  margin-bottom: 35px;
 }
 
 .elemento_formulario p{
