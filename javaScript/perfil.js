@@ -28,10 +28,9 @@ function bloq_desbloq(){
     // Habilitamos el campo
     this.previousElementSibling.disabled = false;
     // Creamos la nueva foto
-    var nueva_foto = document.createElement("p");
-    var texto_guardar = document.createTextNode("G");
-    // Y la anhadimos
-    nueva_foto.appendChild(texto_guardar);
+    var nueva_foto = document.createElement("img");
+    nueva_foto.setAttribute("src", "Imaxes/Logos/logo_gardar.svg");
+    nueva_foto.setAttribute("class", "fotoGardar");
     fig.appendChild(nueva_foto);
   }
   else{
