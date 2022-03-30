@@ -40,6 +40,7 @@ input:focus, button:focus {
 
 .flexbox{
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
