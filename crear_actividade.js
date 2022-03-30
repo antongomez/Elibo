@@ -16,11 +16,14 @@
 
 }*/
 function comprobarCampos(){
-  console.log("jolasdfasdfdsf");
+  var distancia = $("#campo_distancia")
+  $("#mensaje_error").removeClass("texto_oculto");
+  $(document).scrollTop("0");
+
 }
 
 $(document).ready(function(){
-  /*$("#btn-crear").on('click', crearActividad);*/
+  $("#mensaje_error").addClass("texto_oculto");
   $("#btn-crear").on('click', comprobarCampos);
 
 

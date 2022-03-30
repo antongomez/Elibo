@@ -10,6 +10,10 @@ input, textarea{
   color: red;
 }
 
+.texto_oculto{
+  visibility: hidden;
+}
+
 
 .container__sup{
   width: 832;
