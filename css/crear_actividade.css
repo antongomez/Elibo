@@ -3,6 +3,17 @@
 input, textarea{
   border-radius: 6px;
   border-width: 1px;
+  border-style: solid;
+
+}
+
+textarea{
+  resize: none;
+}
+
+/* Eliminamos o bordeado cando se fai focus */
+input:focus, button:focus {
+  outline: none;
 }
 
 #mensaje_error{
@@ -46,6 +57,10 @@ input, textarea{
   width: 157px;
   height: 35px;
   padding: 5px;
+}
+
+.borde_rojo{
+  border-color: red;
 }
 
 .container__inf{
