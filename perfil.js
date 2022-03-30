@@ -6,13 +6,41 @@ var lapiz;
 for (var i=1; i < 4; i++){
   campo = lista[i].getElementsByTagName("input")[0];
   lapiz = lista[i].getElementsByTagName("button")[0];
-  lapiz.addEventListener("click", desbloquear_campo);
-  campo.addEventListener("focusout", bloquear_campo);
+  lapiz.addEventListener("click", bloq_desbloq);
+  //campo.addEventListener("focusout", bloquear_campo);
 }
 
-function desbloquear_campo(){
-  this.previousSibling.previousSibling.disabled = false;
-}
-function bloquear_campo(){
-  this.disabled = true;
+function bloq_desbloq(){
+
+  // Eliminamos la foto vieja
+  var fig = this.firstElementChild;
+  fig.removeChild(fig.firstElementChild);
+
+  // Comprobamos el estado del campo de texto
+  var deshabilitado = this.previousElementSibling.disabled;
+  if(deshabilitado == true){
+    // Habilitamos el campo
+    this.previousElementSibling.disabled = false;
+    // Creamos la nueva foto
+    var nueva_foto = document.createElement("p");
+    var texto_guardar = document.createTextNode("G");
+    // Y la anhadimos
+    nueva_foto.appendChild(texto_guardar);
+    fig.appendChild(nueva_foto);
+  }
+  else{
+    this.previousElementSibling.disabled = true;
+
+    // Creamos la nueva foto
+    nueva_foto = document.createElement("img");
+    nueva_foto.setAttribute("src", "Imaxes/Logos/LogoEditarElibo.svg");
+    nueva_foto.setAttribute("class", "fotoLapiz");
+    // Y la anhadimos
+    fig.appendChild(nueva_foto);
+
+    //<img src="Imaxes\Logos\LogoEditarElibo.svg" class="fotoLapiz">
+  }
+
+
+
 }
