@@ -16,17 +16,24 @@ function comprobarCampos(){
       if(error === true){
         mostrarErro();
       } else {
-        crearActividade();
+        var actividade = new Object();
+        actividade.distacia = $("#distancia").val();
+        actividade.duracion = $("#duracion").val();
+        actividade.deporte = $("#deporte").val();
+        actividade.material = $("#material").val();
+        actividade.data = $("#data").val();
+        actividade.hora = $("#hora").val();
+        actividade.ubicacion = $("#ubicacion").val();
+        crearActividade(actividade);
       }
   });
 
   prom.then(
-    function() {
+    function(actividade) {
       $("#mensaje_error").addClass("texto_oculto");
-      var actividade = new Object();
-    //  actividade.distacia = $("#distancia").val();
-      //console.log(actividade.distancia);
-      //  console.log($("#distancia").val());
+      // Enviariamos a informacion ao servidor para que a engada a base de datos
+      window.location.replace("perfil.html");
+
     },
     function(){
       $("#mensaje_error").removeClass("texto_oculto");
