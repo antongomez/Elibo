@@ -55,6 +55,34 @@
   font-weight: 200;
 }
 
+.biografia{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+
+
+.biografia textarea{
+  border-style: none;
+  resize: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15;
+  font-family: Helvetica Now, Helvetica;
+}
+
+.biografia textarea:disabled{
+  background-color: white;
+}
+
+.biografia p{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .elemento_centrado{
   display: flex;
   align-items: center;
@@ -96,14 +124,17 @@
   height: 20px;
   padding: 5px;
   margin-left: 10px;
-  border-style: none;
+  border-width: thin;
+  border-radius: 3px;
   font-weight: bold;
   font-size: 15;
   margin-right: 10px;
+  outline: inherit;
 }
 
 .campo_perfil:disabled{
   background-color: white;
+  border-style: none;
 }
 
 
@@ -113,6 +144,10 @@
 
 #campo_idade{
   width: 30px;
+}
+
+#campo_ubicacion{
+  width: 190px;
 }
 
 
