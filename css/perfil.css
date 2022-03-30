@@ -175,6 +175,10 @@
   width: 20px;
 }
 
+.fotoGardar{
+  height: 20px;
+}
+
 .boton_lapiz:hover{
   cursor: hand;
 }
