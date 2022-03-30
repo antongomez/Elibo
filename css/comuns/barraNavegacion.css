@@ -43,11 +43,14 @@ nav .elemento-menu {
   width: max-content; /*Para evitar que ao redimensionar a pantalla corte a palabra "Sobre nos"*/
 }
 
+
 /* Para conseguir o subliñado cando se pasa por riba */
 nav .elemento-menu a {
   padding: 0 5 20 5;
+  outline: none;
 }
 
+nav .elemento-menu a:focus,
 nav .elemento-menu a:hover {
   /*transition: .3s; Aplica un retardo*/
   border-width: 0 0 3 0;  /*Para "subliñar" cando pasamos por riba*/
@@ -154,4 +157,110 @@ nav .elemento-menu a:hover {
 
 .fotoMais_baleiro:hover {
   opacity: 0;
+}
+
+.oculto{
+  display: none;
+}
+
+.no_outline{
+  outline: none;
+}
+
+
+.lista_enlaces{
+  display: flex;
+}
+
+@media only screen and (max-width: 1060px) {
+  .ocultar{
+    display: none;
+  }
+  .oculto{
+    display: inherit;
+  }
+  .boton_hamburguesa{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.4s ease-out;
+  }
+
+  .boton_hamburguesa:hover{
+    cursor: hand;
+  }
+
+
+  .linea-1,
+  .linea-2,
+  .linea-3 {
+    width: 50px;
+    height: 10px;
+    background-color: #FF8A00;
+    margin: 3px 0px;
+    transition: 0.4s ease-out;
+  }
+
+  .change .linea-1 {
+    transform: rotate(-45deg) translate(8px, -7px);
+    position: absolute;
+    margin-top: 20px;
+  }
+
+  .change .linea-2 {
+    opacity: 0;
+  }
+
+  .change .linea-3 {
+    transform: rotate(45deg) translate(-7px, -8px);
+    position: absolute;
+    margin-top: 20px;
+  }
+
+  nav{
+    margin: 0 92;
+  }
+
+  .lista_enlaces{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFC688;
+    position: fixed;
+    top: 60;
+    max-width: 200px;
+    overflow-y: auto;
+    left: 0;
+    right: 0;
+    transition: right 0.4s;
+
+  }
+
+
+  .lista_enlaces_visible{
+    right: 100%;
+  }
+
+
+
+  nav .elemento-menu a {
+    color: white;
+    padding: 0;
+    outline: none;
+  }
+
+  nav .oculto a {
+    padding: 0;
+  }
+
+  nav .elemento-menu a:focus,
+  nav .elemento-menu a:hover {
+    border-style: none;
+  }
+
 }
