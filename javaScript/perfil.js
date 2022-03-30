@@ -86,7 +86,7 @@ function mostrarActividades(jsonObj){
     }
     acts += '"> </figure> <h1><a href="' + jsonObj.Actividades[x].Enlace + '">';
     acts += jsonObj.Actividades[x].Titulo;
-    acts += '</h1> </div> <ul class="lista lista-flex barra-actividade"> <li>'
+    acts += '</a></h1> </div> <ul class="lista lista-flex barra-actividade"> <li>'
           + '<div> <p>Distancia</p> <h2>'
           + jsonObj.Actividades[x].Distancia
           + '</h2> </div> </li> <li> <div class="vlinha"></div> </li> <li> <div>'
