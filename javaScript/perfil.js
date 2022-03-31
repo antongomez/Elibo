@@ -15,32 +15,29 @@ for (var i=0; i < 4; i++){
 }
 
 function bloq_desbloq(){
-
-  // Eliminamos la foto vieja
+  // Eliminamos a foto vella
   var fig = this.firstElementChild;
   fig.removeChild(fig.firstElementChild);
-
-  // Comprobamos el estado del campo de texto
+  // Comprobamos o estado do campo de texto
   var deshabilitado = this.previousElementSibling.disabled;
   if(deshabilitado == true){
-    // Habilitamos el campo
+    // Habilitamos o campo
     this.previousElementSibling.disabled = false;
-    // Creamos la nueva foto
+    // Creamos a nova foto
     var nueva_foto = document.createElement("img");
     nueva_foto.setAttribute("src", "Imaxes/Logos/logo_gardar.svg");
     nueva_foto.setAttribute("class", "fotoGardar");
     fig.appendChild(nueva_foto);
   }
   else{
+    // Deshabilitamos o campo
     this.previousElementSibling.disabled = true;
-
-    // Creamos la nueva foto
+    // Creamos a nova foto
     nueva_foto = document.createElement("img");
     nueva_foto.setAttribute("src", "Imaxes/Logos/LogoEditarElibo.svg");
     nueva_foto.setAttribute("class", "fotoLapiz");
-    // Y la anhadimos
+    // E engadimola
     fig.appendChild(nueva_foto);
-
   }
 
 }
