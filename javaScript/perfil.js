@@ -10,10 +10,8 @@ var lista = document.getElementsByName("elemento_bio");
 var campo;
 var lapiz;
 for (var i=0; i < 4; i++){
-  //campo = lista[i].getElementsByTagName("input")[0];
   lapiz = lista[i].getElementsByTagName("button")[0];
   lapiz.addEventListener("click", bloq_desbloq);
-  //campo.addEventListener("focusout", bloquear_campo);
 }
 
 function bloq_desbloq(){
@@ -43,7 +41,6 @@ function bloq_desbloq(){
     // Y la anhadimos
     fig.appendChild(nueva_foto);
 
-    //<img src="Imaxes\Logos\LogoEditarElibo.svg" class="fotoLapiz">
   }
 
 }
